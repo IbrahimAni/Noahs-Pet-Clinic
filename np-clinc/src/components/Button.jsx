@@ -3,9 +3,9 @@ import "./styles/Button.css"
 
 function Button({name}) {
   return (
-    <div className='btn-main'>
-        {name}
-    </div>
+    <button className='btn-main btn-header btn-about'>
+      {name}
+    </button>
   )
 }
 

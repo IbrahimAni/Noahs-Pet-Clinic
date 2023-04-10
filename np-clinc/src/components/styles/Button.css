@@ -1,4 +1,17 @@
 .btn-main {
-    background-color: red;
     color: #fff;
+}
+
+.btn-header {
+    width: 160px;
+    padding: 15px;
+    background: #1ba0ab;
+    border: none;
+    border-radius: 7px;
+    font-size: 20px ;
+}
+
+.btn-about {
+    width: fit-content;
+    padding: 12px;
 }

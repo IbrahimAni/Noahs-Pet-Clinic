@@ -1,0 +1,45 @@
+.about-the-clinic-container {
+    padding: 25px 90px;
+    display: flex;
+    margin-top: 69px;
+}
+
+.image-container-noahs-clinic {
+    width: 450px;
+    height: 490px;
+    flex-shrink: 0;
+    margin-right: 165px;
+}
+
+.image-container-noahs-clinic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-container-noahs-clinic {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container-noahs-clinic h2 {
+    font-size: 40px;
+    color: #0b3361;
+    margin: -4px 0;
+}
+
+.about-container-noahs-clinic h4 {
+    color: #0e3464;
+}
+
+.about-container-noahs-clinic p {
+    color: #567193;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.btn-about {
+    font-size: 16px;
+}
