@@ -12,9 +12,13 @@ public class AppointmentNursed {
 
     public int getId() {
         return id;
-    }
+    }    
 
-    public int getAppointmentId() {
+    public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getAppointmentId() {
         return appointmentId;
     }
 

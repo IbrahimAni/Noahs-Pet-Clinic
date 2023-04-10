@@ -17,8 +17,12 @@ public class Medication {
     public int getMedicationId() {
         return medicationId;
     }
+    
+    public void setMedicationId(int medicationId) {
+		this.medicationId = medicationId;
+	}
 
-    public int getAppointmentId() {
+	public int getAppointmentId() {
         return appointmentId;
     }
 

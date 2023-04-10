@@ -15,8 +15,12 @@ public class PetOwner extends Contact {
     public int getOwnerId() {
         return ownerId;
     }
+    
+    public void setOwnerId(int ownerId) {
+		this.ownerId = ownerId;
+	}
 
-    public String getName() {
+	public String getName() {
         return name;
     }
 

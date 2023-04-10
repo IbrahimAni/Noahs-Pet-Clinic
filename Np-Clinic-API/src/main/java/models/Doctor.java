@@ -16,8 +16,12 @@ public class Doctor extends Contact {
     public int getDoctorId() {
         return doctorId;
     }
+    
+    public void setDoctorId(int doctorId) {
+		this.doctorId = doctorId;
+	}
 
-    public String getName() {
+	public String getName() {
         return name;
     }
 

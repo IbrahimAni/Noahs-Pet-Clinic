@@ -16,8 +16,12 @@ public class Nurse extends Contact {
     public int getNurseId() {
         return nurseId;
     }
+    
+    public void setNurseId(int nurseId) {
+		this.nurseId = nurseId;
+	}
 
-    public String getName() {
+	public String getName() {
         return name;
     }
 

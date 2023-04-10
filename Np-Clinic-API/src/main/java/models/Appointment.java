@@ -24,8 +24,12 @@ public class Appointment {
     public int getAppointmentId() {
         return appointmentId;
     }
+    
+    public void setAppointmentId(int appointmentId) {
+		this.appointmentId = appointmentId;
+	}
 
-    public int getPetId() {
+	public int getPetId() {
         return petId;
     }
 

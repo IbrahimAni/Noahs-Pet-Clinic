@@ -21,8 +21,12 @@ public class Diagnosis {
     public int getDiagnosisId() {
         return diagnosisId;
     }
+    
+    public void setDiagnosisId(int diagnosisId) {
+		this.diagnosisId = diagnosisId;
+	}
 
-    public int getAppointmentId() {
+	public int getAppointmentId() {
         return appointmentId;
     }
 

@@ -24,8 +24,12 @@ public class Pet {
     public int getPetId() {
         return petId;
     }
+    
+    public void setPetId(int petId) {
+		this.petId = petId;
+	}
 
-    public int getOwnerId() {
+	public int getOwnerId() {
         return ownerId;
     }
 
