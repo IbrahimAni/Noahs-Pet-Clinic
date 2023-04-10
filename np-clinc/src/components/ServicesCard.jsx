@@ -1,10 +1,13 @@
 import React from 'react'
+import "./styles/ServicesCard.css"
 
-function ServicesCard({img, service, description}) {
+function ServicesCard({img, services, description}) {
   return (
-    <div className='services-container'>
+    <div className='services-card-container'>
         <div className='actual-services'>
-            <img />
+            <div className='actual-services-img-container'>
+                <img src={img}/>
+            </div>
             <h2>{services}</h2>
             <p>{description}</p>
         </div>

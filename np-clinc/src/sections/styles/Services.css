@@ -1,0 +1,29 @@
+.services-container {
+    padding: 25px 90px;
+    margin-top: 69px;
+}
+
+.our-services-container {
+    margin-bottom: 50px;
+}
+
+.our-services-container h1 {
+    color: #093361;
+    font-size: 45px;
+    margin: -5px 0;
+}
+
+.our-services-container p {
+    color: #869ab3;
+    font-size: 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services-card-img {
+    fill: #1ba0ab;
+}
