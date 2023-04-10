@@ -1,12 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
 import { Button } from './components';
+import {Routes, Route} from "react-router-dom"
+
 
 function App() {
   return (
-    <div className="App">
-      <Button name="Click Me" />
-    </div>
+    <Routes>
+        <Route path='/' element={<Button name='landing page'/>}/>
+        <Route path='/home' element={<Button name='home page'/>}/>
+    </Routes>
   );
 }
 
