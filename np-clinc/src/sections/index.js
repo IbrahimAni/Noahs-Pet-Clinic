@@ -6,6 +6,7 @@ import Services from "./Services";
 import BookWith from "./BookWith";
 import HowItWorks from "./HowItWorks";
 import Testimonials from "./Testimonials";
+import OurVets from "./OurVets";
 
 
 export {
@@ -16,5 +17,6 @@ export {
   Services,
   BookWith,
   HowItWorks,
-  Testimonials
+  Testimonials,
+  OurVets
 }

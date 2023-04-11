@@ -1,0 +1,25 @@
+.our-vets-container {
+    padding: 20px 90px;
+    margin-top: 69px;
+}
+
+.our-vets-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.our-vets-text-container h1 {
+    color: #093361;
+    margin-bottom: 40px;
+}
+
+.our-vets-text-container p {
+    color: #1ba0ab;
+    font-size: 17px;
+}
+
+.vet-card-section-container {
+    display: flex;
+    justify-content: space-between;
+}

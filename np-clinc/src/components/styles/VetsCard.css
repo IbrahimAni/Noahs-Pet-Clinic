@@ -1,0 +1,26 @@
+.vet-card-container {
+    width: 330px;
+    height: 500px;
+}
+
+.vet-card-img-container {
+    width: 100%;
+    height: 83%;
+}
+
+.vet-card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vet-card-text p {
+    color: #8b8ca9;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.vet-card-text h3 {
+    margin-bottom: 0;
+    color: #302f3f;
+}
