@@ -1,0 +1,9 @@
+.stars-container {
+    width: 15px;
+    height: 15px;
+}
+
+.stars-container img {
+    width: 100%;
+    height: 100%;
+}

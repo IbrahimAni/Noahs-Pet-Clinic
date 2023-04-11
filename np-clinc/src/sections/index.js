@@ -5,6 +5,7 @@ import NoahsClinicAbout from "./NoahsClinicAbout";
 import Services from "./Services";
 import BookWith from "./BookWith";
 import HowItWorks from "./HowItWorks";
+import Testimonials from "./Testimonials";
 
 
 export {
@@ -14,5 +15,6 @@ export {
   NoahsClinicAbout,
   Services,
   BookWith,
-  HowItWorks
+  HowItWorks,
+  Testimonials
 }

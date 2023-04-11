@@ -1,0 +1,22 @@
+.testimonials-container {
+    padding: 20px 90px;
+    margin-top: 69px;
+}
+
+.testimonials-div-container h1 {
+    color: #093361;
+    margin-bottom: 50px
+}
+
+.testimonial-cards-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.divider {
+    width: 3px;
+    height: 100%;
+    background-color: #e9fafc;
+    position: absolute;
+}
