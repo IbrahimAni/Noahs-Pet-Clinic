@@ -1,0 +1,27 @@
+.how-it-works-card-container {
+    width: 200px;
+    height: fit-content;
+}
+
+.image-container-how-it-works {
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+    margin: 25px 30%;
+    background-color: #e9fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.image-container-how-it-works img {
+    width: 50%;
+    height: 50%;
+}
+
+.actual-how-it-works-container p {
+    text-align: center;
+    color: #8b8ca9;
+    font-size: 16px
+}

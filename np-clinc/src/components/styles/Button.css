@@ -1,17 +1,9 @@
 .btn-main {
-    color: #fff;
-}
-
-.btn-header {
-    width: 160px;
-    padding: 15px;
+    width: fit-content;
+    padding: 12px;
     background: #1ba0ab;
     border: none;
     border-radius: 7px;
     font-size: 20px ;
-}
-
-.btn-about {
-    width: fit-content;
-    padding: 12px;
+    color: #fff;
 }

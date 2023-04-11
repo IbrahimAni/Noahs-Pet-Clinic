@@ -4,6 +4,7 @@ import Header from "./Header";
 import NoahsClinicAbout from "./NoahsClinicAbout";
 import Services from "./Services";
 import BookWith from "./BookWith";
+import HowItWorks from "./HowItWorks";
 
 
 export {
@@ -12,5 +13,6 @@ export {
   Header,
   NoahsClinicAbout,
   Services,
-  BookWith
+  BookWith,
+  HowItWorks
 }
