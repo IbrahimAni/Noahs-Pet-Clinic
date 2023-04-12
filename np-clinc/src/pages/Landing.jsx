@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, NoahsClinicAbout, Services, BookWith, HowItWorks, Testimonials, OurVets, Articles } from '../sections'
+import { Header, NoahsClinicAbout, Services, BookWith, HowItWorks, Testimonials, OurVets, Articles, BlogSubscribe, Footer } from '../sections'
 import "./styles/Landing.css"
 
 
@@ -14,6 +14,8 @@ const Landing = () => {
       <Testimonials />
       <OurVets />
       <Articles />
+      <BlogSubscribe />
+      <Footer />
     </div>
   )
 }

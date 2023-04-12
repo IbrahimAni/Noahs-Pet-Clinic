@@ -1,0 +1,55 @@
+.blog-suprise-section-container {
+    padding: 20px 90px;
+    margin-top: 49px;
+}
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e9fafc; 
+}
+
+.section-container h1 {
+    color: #093361;
+    margin-top: 90px;
+    margin-bottom: 35px;
+}
+
+.subscribe-form-container {
+    width: 70%;
+    height: 60px;
+    padding: 10px 0;
+    margin-bottom: 80px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.subscribe-form-container input {
+    height: 90%;
+    width: 83%;
+    padding: 0 10px;
+    outline: none;
+    border: none;
+}
+
+.subscribe-form-container input::placeholder {
+    font-size: 17px;
+}
+
+input[type="email"]:not(:placeholder-shown) {
+    font-size: 17px;
+}
+
+.btn-main {
+    width: fit-content;
+    padding: 16px;
+    background: #1ba0ab;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    height: 100%;
+}

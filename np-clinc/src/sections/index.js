@@ -8,6 +8,7 @@ import HowItWorks from "./HowItWorks";
 import Testimonials from "./Testimonials";
 import OurVets from "./OurVets";
 import Articles from "./Articles";
+import BlogSubscribe from "./BlogSubscribe";
 
 
 export {
@@ -20,5 +21,6 @@ export {
   HowItWorks,
   Testimonials,
   OurVets,
-  Articles
+  Articles,
+  BlogSubscribe
 }
