@@ -1,5 +1,6 @@
 import React from 'react'
-import { Header, NoahsClinicAbout, Services, BookWith, HowItWorks, Testimonials, OurVets } from '../sections'
+import { Header, NoahsClinicAbout, Services, BookWith, HowItWorks, Testimonials, OurVets, Articles } from '../sections'
+import "./styles/Landing.css"
 
 
 const Landing = () => {
@@ -12,6 +13,7 @@ const Landing = () => {
       <HowItWorks />
       <Testimonials />
       <OurVets />
+      <Articles />
     </div>
   )
 }

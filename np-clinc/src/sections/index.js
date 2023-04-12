@@ -7,6 +7,7 @@ import BookWith from "./BookWith";
 import HowItWorks from "./HowItWorks";
 import Testimonials from "./Testimonials";
 import OurVets from "./OurVets";
+import Articles from "./Articles";
 
 
 export {
@@ -18,5 +19,6 @@ export {
   BookWith,
   HowItWorks,
   Testimonials,
-  OurVets
+  OurVets,
+  Articles
 }

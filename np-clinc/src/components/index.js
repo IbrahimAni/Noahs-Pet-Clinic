@@ -4,6 +4,7 @@ import HowItWorksCard from "./HowItWorksCard"
 import StarRatings from "./StarRatings"
 import TestimonialCard from "./TestimonialCard"
 import VetsCard from "./VetsCard"
+import ArticlesCard from "./ArticlesCard"
 
 export {
     Button,
@@ -11,5 +12,6 @@ export {
     HowItWorksCard,
     StarRatings,
     TestimonialCard,
-    VetsCard
+    VetsCard,
+    ArticlesCard
 }

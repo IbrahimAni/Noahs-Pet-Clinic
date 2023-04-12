@@ -1,0 +1,16 @@
+.articles-container {
+    padding: 20px 90px;
+    margin-top: 49px;
+    background-color: #fdfeff;
+}
+
+.articles-container h1 {
+    color: #093361;
+    margin-bottom: 40px;
+}
+
+.article-cards-section-container {
+    display: flex;
+    padding: 0 55px;
+    justify-content: space-between;
+}
