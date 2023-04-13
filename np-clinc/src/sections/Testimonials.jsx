@@ -19,9 +19,7 @@ function Testimonials() {
             customerRating='4.8'
             customerImage={TestimonialWoman}
             />
-            <div className='divider'>
-
-            </div>
+            <div className='divider'></div>
             <TestimonialCard 
             title='Both Cheap and Friendly Staff'
             text='"I recently had to take my dog to the vet and was hesitant because of the cost. But I was pleasantly surprised by how affordable the services were at this veterinary clinic. Not only that, but the staff were incredibly friendly and made the whole experience stress-free for both me and my pet.'

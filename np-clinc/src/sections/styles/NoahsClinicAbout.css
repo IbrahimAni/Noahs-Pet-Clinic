@@ -55,7 +55,6 @@
 @media screen and (max-width: 768px) {
     .about-the-clinic-container {
         flex-direction: column;
-        border: 1px solid;
         padding: 10px 30px;
         margin-top: 95px;
     }

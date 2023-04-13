@@ -25,3 +25,25 @@
     color: #8b8ca9;
     font-size: 16px
 }
+
+@media screen and (max-width: 768px) {
+    .image-container-how-it-works {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 0;
+    }
+
+    .actual-how-it-works-container p {
+        font-size: 14px;
+    }
+
+    .how-it-works-card-container {
+        margin-bottom: 15px;
+    }
+
+    .actual-how-it-works-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

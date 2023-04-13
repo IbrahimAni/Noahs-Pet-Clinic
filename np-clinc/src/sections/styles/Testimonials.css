@@ -20,3 +20,25 @@
     background-color: #e9fafc;
     position: absolute;
 }
+
+
+@Media screen and (max-width: 768px) {
+    .testimonials-container {
+        padding: 20px 30px;
+    }
+
+    .testimonial-cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divider {
+        height: 3px;
+        width: 100%;
+    }
+
+    .testimonials-div-container h1 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+}

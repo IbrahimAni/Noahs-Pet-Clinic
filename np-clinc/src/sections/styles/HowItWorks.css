@@ -30,3 +30,23 @@
     text-align: center;
     margin-top: 50px;
 }
+
+
+@media screen and (max-width: 768px) {
+    .how-it-works-container {
+        padding: 20px 30px;
+    }
+
+    .card-how-it-works-container {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .how-it-works-text-container h1 {
+        margin-bottom: 15px;
+    }
+
+    .how-it-works-btn-container {
+        margin-top: 25px;
+    }
+}

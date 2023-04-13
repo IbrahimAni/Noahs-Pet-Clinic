@@ -39,3 +39,24 @@
 .vet-card-text {
     margin-top: 30px;
 }
+
+
+@Media screen and ( max-width: 768px ) {
+    .vet-card-container {
+        width: 70%;
+        height: 420px;
+        margin-bottom: 15px;
+    }
+
+    .vet-card-text {
+        margin-top: 0;
+    }
+
+    .vet-card-text h3 {
+        font-size: 16px;
+    }
+
+    .vet-card-text p {
+        font-size: 12px;
+    }
+}

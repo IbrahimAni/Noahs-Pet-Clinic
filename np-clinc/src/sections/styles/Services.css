@@ -27,3 +27,23 @@
 .services-card-img {
     fill: #1ba0ab;
 }
+
+
+@media screen and (max-width: 768px) {
+    .services-container {
+        padding: 10px 30px;
+    }
+
+    .our-services-container h1 {
+        font-size: 30px;
+    }
+
+    .our-services-container p {
+        font-size: 16px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+} 

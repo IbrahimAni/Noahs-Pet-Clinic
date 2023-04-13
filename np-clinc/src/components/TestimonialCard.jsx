@@ -16,7 +16,7 @@ function TestimonialCard({title, text, customerImage, customerName, customerDesc
                 <img src={customerImage}/>
             </div>
             <div className='customer-details-name-container'>
-                <p>{customerName}</p>
+                <p className='customer-name'>{customerName}</p>
                 <p className='customer-decriptor'>{customerDescription}</p>
             </div>
         </div>
