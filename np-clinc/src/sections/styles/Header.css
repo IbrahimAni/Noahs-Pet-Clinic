@@ -25,3 +25,13 @@
 .text-container-header p {
     font-size: 29px;
 }
+
+.btn-main {
+    width: fit-content;
+    padding: 12px;
+    background: #1ba0ab;
+    border: none;
+    border-radius: 7px;
+    font-size: 20px;
+    color: #fff;
+}

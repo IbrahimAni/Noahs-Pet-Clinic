@@ -1,24 +1,36 @@
 .navbar-conatiner {
     max-width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: absolute;
     width: 100%;
     top: 0;
     left: 0;
     right: 0;
+    padding-left: 80px;
+    padding-right: 40px;
+    box-sizing: border-box;
 }
 
 .company-logo h2 {
     color: #fff;
 }
 
+.nav-items-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
 .navbar-items {
+    display: flex;
 }
 
 .navbar-items ul {
     display: flex;
+    margin-right: 30px;
 }
 
 .navbar-items ul li {

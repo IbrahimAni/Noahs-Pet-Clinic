@@ -12,7 +12,7 @@ function Header() {
         <div className='text-container-header'>
             <h1>Your Family Members Are Important To Us</h1>
             <p>We are on duty 24 hours a day for the health of your family members</p>
-            <Button name="Get Started" className="btn-header"/>
+            <Button name="Get Started" btnClass="btn-main"/>
         </div>
     </div>
   )
