@@ -1,12 +1,13 @@
 import React from 'react'
 import "./styles/Navbar.css"
+import { Button } from '../components';
 
 const Navbar = () => {
   return (
     <div className='navbar-conatiner'>
       <div className='nav-items-container'>
         <div className='company-logo'>
-          <h2>Noah's</h2>
+          <h2>Noah's.</h2>
         </div>
         <div className='navbar-items'>
             <ul>
@@ -19,7 +20,7 @@ const Navbar = () => {
               <li>Blog</li>
             </ul>
             <div className='navbar-login-btn'>
-                <button>Login</button>
+                <Button name="Login" btnClass="btn-login"/>
             </div>
         </div>
       </div>

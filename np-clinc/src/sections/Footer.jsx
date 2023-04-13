@@ -47,6 +47,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className='footer-copyright-container'>  
+          <p>&copy; 2023 Noahs Pets Clinic. All rights reserved.</p>
+      </div>
     </div>
   )
 }

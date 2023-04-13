@@ -35,3 +35,28 @@
     font-size: 20px;
     color: #fff;
 }
+
+
+@media screen and (max-width: 768px) {
+    .text-container-header {
+        border: 1px solid red;
+        width: 350px;
+    }
+
+    .text-container-header h1 {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .text-container-header p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .btn-container-header {
+        border: 1px solid green;
+        text-align: center;
+    }
+
+
+}

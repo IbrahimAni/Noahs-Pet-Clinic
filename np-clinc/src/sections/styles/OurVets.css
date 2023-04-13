@@ -17,6 +17,7 @@
 .our-vets-text-container p {
     color: #1ba0ab;
     font-size: 17px;
+    cursor: pointer;
 }
 
 .vet-card-section-container {
