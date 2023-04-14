@@ -14,3 +14,16 @@
     padding: 0 55px;
     justify-content: space-between;
 }
+
+@Media screen and (max-width: 768px) {
+    .articles-container {
+        padding: 20px 30px;
+        margin-top: 0px;
+    }
+
+    .article-cards-section-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

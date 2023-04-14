@@ -21,7 +21,7 @@ function ArticlesCard({img, datePosted, doctorPosted, articleTitle, articleDescr
             </div>
         </div>
         <div className='article-card-text-container'>
-            <h1>{articleTitle}</h1>
+            <h1 className='article-title'>{articleTitle}</h1>
             <p className='description'>{articleDescription}</p>
             <p className='read-more'>READ MORE  &rarr;</p>
         </div>

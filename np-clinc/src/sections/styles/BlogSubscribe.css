@@ -53,3 +53,23 @@ input[type="email"]:not(:placeholder-shown) {
     text-align: center;
     height: 100%;
 }
+
+
+@Media screen and ( max-width: 768px ) {
+    .blog-suprise-section-container {
+        padding: 20px 0px;
+        margin-top: 0px;
+    }
+
+    .section-container h1 {
+        font-size: 25px;
+    }
+
+    .subscribe-form-container {
+        display: flex;
+    }
+
+    .subscribe-form-container input::placeholder {
+        font-size: 14px;
+    }
+}

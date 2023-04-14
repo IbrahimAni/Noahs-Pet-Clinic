@@ -19,9 +19,14 @@ const Navbar = () => {
               <li>Contact</li>
               <li>Blog</li>
             </ul>
-            <div className='navbar-login-btn'>
-                <Button name="Login" btnClass="btn-login"/>
-            </div>
+        </div>
+        <div className='navbar-login-btn'>
+            <Button name="Login" btnClass="btn-login"/>
+        </div>
+        <div className='nav-btn-container'>
+          <div className='menu-btn'>
+            
+          </div>
         </div>
       </div>
     </div>
