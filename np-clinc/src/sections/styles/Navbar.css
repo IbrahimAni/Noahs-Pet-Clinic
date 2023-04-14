@@ -30,7 +30,7 @@
     display: flex;
 }
 
-.navbar-items ul {
+.nav-ul-list {
     display: flex;
     margin-right: 30px;
 }
@@ -40,6 +40,10 @@
     list-style: none;
     margin: 0 15px;
     color: white;
+}
+
+.login-nav-not {
+    display: none;
 }
 
 .navbar-login-btn {
@@ -61,65 +65,90 @@
 
 .nav-btn-container {
     position: relative;
-    width: 80px;
-    height: 80px;
-    border: 3px solid white;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 50px;
+    height: 50px;
+    /* border: 3px solid white; */
     cursor: pointer;
     transition: all .5s ease-in-out;
+    display: none;
 }
 
 .menu-btn {
-    width: 50px;
-    height: 6px;
-    background: #fff;
+    width: 40px;
+    height: 4px;
+    background: black;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255,101,47,.2);
     transition: all .5s ease-in-out;
 }
 
-.menu-btn::before, .menu-btn::after {
+.menu-btn::before, 
+.menu-btn::after {
     content: '';
     position: absolute;
-    width: 50px;
-    height: 6px;
-    background: #fff;
+    width: 40px;
+    height: 4px;
+    background: black;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
     transition: all .5s ease-in-out;
 }
 
+.menu-btn::before {
+    transform: translateY(-10px);
+}
+
+.menu-btn::after {
+    transform: translateY(10px);
+}
+
+.nav-btn-container.open .menu-btn {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.nav-btn-container.open .menu-btn::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.nav-btn-container.open .menu-btn::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
 
 
 @Media screen and ( max-width: 768px ) {
 
     .company-logo h2 {
-        
+        color: black;
+    }
+
+    .nav-items-container {
+        justify-content: flex-start;
     }
 
     .navbar-conatiner {
         padding: 0 10px;
         margin-top: 0;
-        border: 1px solid;
+        padding: 8px 25px;
+        background-color: #fff;
+        position: fixed;
+        z-index: 1;
     }
 
     .navbar-items {
-       border: 1px solid blue;
         position: absolute;
         margin-right: 0;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 0%;
         height: 100vh;
-        z-index: 1;
+        z-index: 2;
         background-color: #1ba0ab;
         transition: width 0.2s ease-in-out;
     }
 
-    .navbar-items ul {
+    .nav-ul-list {
         flex-direction: column;
         position: absolute;
         top: 0;
@@ -130,12 +159,45 @@
         padding: 50px 5px;
         align-items: center;
         transition: width 0.2s ease-in-out;
-        border: 1px solid red;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .showNav {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
     }
 
     .navbar-items ul li {
         margin: 15px 10px;
         font-size: 17px;
+    }
+
+    .navCon {
+        width: 100%;
+    }
+
+    .nav-btn-container {
+        z-index: 3;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    .navbar-login-btn {
+        display: none;
+    }
+
+    .login-show {
+        display: block;
+        border: 1px solid black;
+        padding: 10px 30px;
+        background-color: black;
+        cursor: pointer;
     }
     
 }

@@ -67,6 +67,7 @@ input[type="email"]:not(:placeholder-shown) {
 
     .subscribe-form-container {
         display: flex;
+        width: 85%;
     }
 
     .subscribe-form-container input::placeholder {

@@ -40,6 +40,7 @@
     .card-how-it-works-container {
         align-items: center;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .how-it-works-text-container h1 {

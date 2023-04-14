@@ -20,10 +20,12 @@
 
 .text-container-header h1 {
     font-size: 55px;
+    margin-bottom: 15px;
 }
 
 .text-container-header p {
     font-size: 29px;
+    margin-bottom: 30px;
 }
 
 .btn-main {
@@ -39,8 +41,9 @@
 
 @media screen and (max-width: 768px) {
     .text-container-header {
-        border: 1px solid red;
-        width: 350px;
+        width: 90%;
+        left: 5%;
+        top:55%;
     }
 
     .text-container-header h1 {
@@ -54,7 +57,7 @@
     }
 
     .btn-container-header {
-        border: 1px solid green;
+
         text-align: center;
     }
 
