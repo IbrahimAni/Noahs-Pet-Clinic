@@ -19,7 +19,7 @@ function NoahsClinicAbout() {
                     At Noah's Pet Clinic, we offer a wide range of services to keep your pets healthy and happy. From routine wellness exams and vaccinations to surgery and grooming, we have everything your pet needs to stay healthy and comfortable.
                 </p>
                 <div className='btn-container-about'>
-                <Button name="Book An Appointment" btnClass='btn-main'/>
+                <Button name="Book An Appointment" btnClass='btn-primary btn-no-bg'/>
                 </div>
             </div>
         </div>

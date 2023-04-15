@@ -4,7 +4,6 @@ import { Button } from '../components';
 import { useState, useEffect, useRef } from 'react';
 
 const Navbar = () => {
-    const menuRef = useRef(null)
 
     const [menuOpen, setMenuOpen] = useState(false)
 
@@ -13,7 +12,6 @@ const Navbar = () => {
     }
 
     const menuClass = menuOpen ? "open" : "" ;
-    const showNav = menuOpen ? "showNav" : "" ;
     const navCon = menuOpen ? "navCon" : "" ;
  
   return (
@@ -35,7 +33,7 @@ const Navbar = () => {
             </ul>
         </div>
         <div className='navbar-login-btn'>
-            <Button name="Login" btnClass="btn-login"/>
+            <Button name="Login" btnClass="btn-primary btn-login"/>
         </div>
         <div className={`nav-btn-container ${menuClass}`} 
         onClick={handleClick}

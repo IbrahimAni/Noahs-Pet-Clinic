@@ -94,4 +94,8 @@
     .doctor-posted p {
         font-size: 11px;
     }
+
+    .article-details-container {
+        width: 90%;
+    }
 }

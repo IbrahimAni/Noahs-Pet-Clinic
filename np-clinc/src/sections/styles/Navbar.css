@@ -53,7 +53,7 @@
     width: 100px;
 }
 
-.navbar-login-btn button {
+/* .navbar-login-btn button {
     width: 100%;
     padding: 10px;
     background-color: #1ba0ab;
@@ -61,7 +61,7 @@
     border-radius: 7px;
     color: #fff;
     font-size: 17px;
-}
+} */
 
 .nav-btn-container {
     position: relative;

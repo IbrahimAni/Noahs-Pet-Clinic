@@ -20,7 +20,7 @@ function HowItWorks() {
             <HowItWorksCard img={DogBook} description='Attend the appointment for pet health guidance'/>
         </div>
         <div className='how-it-works-btn-container'>
-            <Button name="Book An Appointment" btnClass="btn-main"/>
+            <Button name="Book An Appointment" btnClass="btn-primary btn-no-bg"/>
         </div>
 
     </div>

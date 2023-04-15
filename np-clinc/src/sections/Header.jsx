@@ -13,7 +13,7 @@ function Header() {
             <h1>Your Family Members Are Important To Us</h1>
             <p>We are on duty 24 hours a day for the health of your family members</p>
             <div className='btn-container-header'>
-                <Button name="Book an Appointment" btnClass="btn-main"/>
+                <Button name="Book an Appointment" btnClass="btn-primary"/>
             </div>
         </div>
     </div>

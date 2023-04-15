@@ -20,7 +20,7 @@
 .subscribe-form-container {
     width: 70%;
     height: 60px;
-    padding: 10px 0;
+    padding: 5px 0;
     margin-bottom: 80px;
     background-color: #fff;
     border-radius: 10px;
@@ -32,6 +32,7 @@
     padding: 0 10px;
     outline: none;
     border: none;
+    margin-right: 25px;
 }
 
 .subscribe-form-container input::placeholder {
@@ -44,7 +45,7 @@ input[type="email"]:not(:placeholder-shown) {
 
 .btn-main {
     width: fit-content;
-    padding: 16px;
+    padding: 10px;
     background: #1ba0ab;
     border: none;
     border-radius: 7px;
