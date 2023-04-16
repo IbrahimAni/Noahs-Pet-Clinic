@@ -39,3 +39,11 @@
 .enetr-otp-card-container p {
     font-size: 13px;
 }
+
+@Media screen and (max-width: 768px) {
+    .enetr-otp-card-container {
+        width: 95%;
+        padding: 20px;
+        border: none;
+    }
+}

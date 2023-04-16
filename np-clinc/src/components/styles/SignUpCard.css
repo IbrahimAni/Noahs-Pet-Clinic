@@ -42,9 +42,11 @@
     margin-bottom: 15px;
 }
 
+
 .set-straight
  {
     margin-top: -7px;
+    cursor: pointer;
 }
 
 .sign-up-form button {
@@ -64,4 +66,17 @@
 span {
     color: #1ba0ab;
     cursor: pointer;
+}
+
+
+@Media screen and (max-width: 768px) {
+    .sign-up-container {
+        width: 95%;
+        padding: 20px;
+        border: none;
+    }
+
+    .terms-agreement {
+        width: 73%;
+    }
 }

@@ -113,3 +113,15 @@
     top: 15px;
     left: 15px;
 }
+
+@Media screen and (max-width: 768px) {
+    .login-card-container {
+        width: 95%;
+        padding: 20px;
+        border: none;
+    }
+
+    .keep-logged-in {
+        width: 30%;
+    }
+}
