@@ -1,5 +1,6 @@
 import React from 'react'
 import "./styles/SignUpCard.css"
+import {Link} from "react-router-dom"
 
 function SignUpCard() {
   return (
@@ -21,7 +22,7 @@ function SignUpCard() {
                 <button>Create an Account</button>
             </form>
             <div className='member-already'>
-                <p className='small-size'>Already a Member ? <span>Log in</span></p>
+                <p className='small-size'>Already a Member ? <Link to='/login' style={{ textDecoration: 'none', color: '#1ba0ab' }} ><span>Log in</span></Link></p>
             </div>
         </div>
     </div>

@@ -5,6 +5,7 @@ import Facebook from "./assets/icons/facebook-3-logo-svgrepo-com.svg"
 import SocialLoginIcon from './SocialLoginIcon'
 import "./styles/LoginCard.css"
 import {ReactComponent as ArrowLeft} from "./assets/icons/arrow-left-solid.svg"
+import {Link} from "react-router-dom"
 
 function LoginCard() {
   return (
@@ -24,14 +25,18 @@ function LoginCard() {
                         <p>Keep me logged in</p>
                     </div>
                     <div className='forget-password'>
-                        <p>Forget Password ?</p>
+                        <Link to='/forgot-password' style={{ textDecoration: 'none', color: '#1ba0ab' }}>
+                            <p>Forget Password ?</p>
+                        </Link>
                     </div>
                 </div>
                 <button>Log in</button>
             </form>
             <div className='dont-have-an-acoount'>
                 <p>Don't have an account ?</p>
-                <p>Sign up</p>
+                <Link to='/register' style={{ textDecoration: 'none', color: '#1ba0ab' }}>
+                    <p>Sign up</p>
+                </Link>
             </div>
             <div className='other-login-section'>
                 <p>or continue with</p>

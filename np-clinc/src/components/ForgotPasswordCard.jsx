@@ -1,5 +1,6 @@
 import React from 'react'
 import "./styles/ForgotPasswordCard.css"
+import {Link} from "react-router-dom"
 
 function ForgotPasswordCard() {
   return (
@@ -14,7 +15,7 @@ function ForgotPasswordCard() {
                 <button>Submit</button>
             </form>
             <div className='go-back-sign-in'>
-                <p>Go back to <span>Login Page</span></p>
+                <p>Go back to <Link to='/login' style={{ textDecoration: 'none', color: '#1ba0ab' }}><span>Login Page</span></Link></p>
             </div>
         </div>
     </div>

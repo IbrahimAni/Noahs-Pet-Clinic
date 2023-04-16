@@ -5,6 +5,7 @@ import CheckCalender from "./assets/icons/calendar-check-solid.svg"
 import Doctor from "./assets/icons/notes-medical-solid.svg"
 import DogBook from "./assets/icons/shield-dog-solid.svg"
 import "./styles/HowItWorks.css"
+import {Link} from "react-router-dom"
 
 
 function HowItWorks() {
@@ -20,7 +21,9 @@ function HowItWorks() {
             <HowItWorksCard img={DogBook} description='Attend the appointment for pet health guidance'/>
         </div>
         <div className='how-it-works-btn-container'>
-            <Button name="Book An Appointment" btnClass="btn-primary btn-no-bg"/>
+            <Link to='/login'>
+                <Button name="Book An Appointment" btnClass="btn-primary btn-no-bg"/>
+            </Link>
         </div>
 
     </div>

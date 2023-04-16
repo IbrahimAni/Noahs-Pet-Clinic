@@ -2,6 +2,7 @@ import React from 'react'
 import "./styles/Navbar.css"
 import { Button } from '../components';
 import { useState, useEffect, useRef } from 'react';
+import {Link} from "react-router-dom"
 
 const Navbar = () => {
 
@@ -29,11 +30,15 @@ const Navbar = () => {
               <li>Appointments</li>
               <li>Contact</li>
               <li>Blog</li>
-              <li className={`login-nav-not ${menuOpen ? "login-show" : ""}`}>Login</li>
+              <Link to='/login'>
+                <li className={`login-nav-not ${menuOpen ? "login-show" : ""}`}>Login</li>
+              </Link>
             </ul>
         </div>
         <div className='navbar-login-btn'>
+          <Link to='/login'>
             <Button name="Login" btnClass="btn-primary btn-login"/>
+          </Link>
         </div>
         <div className={`nav-btn-container ${menuClass}`} 
         onClick={handleClick}
