@@ -1,0 +1,115 @@
+.login-card-container {
+    border: 1px solid grey;
+    width: 35%;
+    padding: 50px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.text-version-login {
+    margin-bottom: 15px;
+}
+
+.text-version-login p {
+    font-size: 13px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input {
+    padding: 13px;
+    margin: 7px 0;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ebebeb;
+}
+
+.login-form input:focus {
+    outline: none;
+    border: 1px solid black;
+}
+
+.login-form input::placeholder {
+    font-size: 15px;
+}
+
+.keep-logged-in {
+    display: flex;
+    width: 36%;
+    justify-content: space-between;
+}
+
+
+.other-info-container {
+    display:  flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.other-info-container p {
+    font-size: 13px;
+}
+
+.login-form button {
+    padding: 14px 0;
+    color: white;
+    font-size: 17px;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1ba0ab;
+    cursor: pointer;
+}
+
+.dont-have-an-acoount {
+    display: flex;
+    margin-top: 10px;
+}
+
+.dont-have-an-acoount p {
+    font-size: 13px;
+}
+
+.dont-have-an-acoount p:first-child {
+    margin-right: 5px;
+}
+
+.dont-have-an-acoount p:nth-child(2) {
+    color: #1ba0ab;
+    cursor: pointer;
+}
+
+.other-login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.other-login-section {
+    font-size: 13px;
+}
+
+.login-social-icons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.forget-password {
+    color: #1ba0ab;
+    cursor: pointer;
+}
+
+
+.go-back-nav {
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}

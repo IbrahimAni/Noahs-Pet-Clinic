@@ -5,6 +5,12 @@ import StarRatings from "./StarRatings"
 import TestimonialCard from "./TestimonialCard"
 import VetsCard from "./VetsCard"
 import ArticlesCard from "./ArticlesCard"
+import SocialLoginIcon from "./SocialLoginIcon"
+import LoginCard from "./LoginCard"
+import SignUpCard from "./SignUpCard"
+import ForgotPasswordCard from "./ForgotPasswordCard"
+import EnterOTPCodeCard from "./EnterOTPCodeCard"
+import ResetPasswordCard from "./ResetPasswordCard"
 
 export {
     Button,
@@ -13,5 +19,11 @@ export {
     StarRatings,
     TestimonialCard,
     VetsCard,
-    ArticlesCard
+    ArticlesCard,
+    SocialLoginIcon,
+    LoginCard,
+    SignUpCard,
+    ForgotPasswordCard,
+    EnterOTPCodeCard,
+    ResetPasswordCard
 }
