@@ -2,10 +2,10 @@ import React from 'react'
 import { LoginCard } from '../components'
 import "./styles/Login.css"
 
-function Login() {
+function Login({setIsLoggedIn}) {
   return (
     <div className='login-page-conatiner'>
-        <LoginCard />
+        <LoginCard setIsLoggedIn={setIsLoggedIn}/>
     </div>
   )
 }

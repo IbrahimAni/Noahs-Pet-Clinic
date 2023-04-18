@@ -3,8 +3,9 @@ import "./styles/Navbar.css"
 import { Button } from '../components';
 import { useState, useEffect, useRef } from 'react';
 import {Link} from "react-router-dom"
+import ProfilePic from "./assets/pexels-marina-gr-14428606.jpg"
 
-const Navbar = () => {
+const Navbar = (props) => {
 
     const [menuOpen, setMenuOpen] = useState(false)
 
@@ -22,24 +23,45 @@ const Navbar = () => {
           <h2>Noah's.</h2>
         </div>
         <div className={`navbar-items ${navCon}`}>
+          {
+            props.loggedInStatus ? 
+            (
             <ul className={`nav-ul-list ${menuOpen ? "showNav" : ""}`}>
+              <li>Dashboard</li>
+              <li>Home</li>
+              <li>Appointments</li>
+              <li>Doctors</li>
+              <li>Contact</li>
+              <li>Blog</li>
+            </ul>
+            ) : (
+              <ul className={`nav-ul-list ${menuOpen ? "showNav" : ""}`}>
               <li>Home</li>
               <li>About</li>
               <li>Services</li>
               <li>Doctors</li>
-              <li>Appointments</li>
               <li>Contact</li>
               <li>Blog</li>
               <Link to='/login'>
                 <li className={`login-nav-not ${menuOpen ? "login-show" : ""}`}>Login</li>
               </Link>
             </ul>
+            )
+          }
         </div>
-        <div className='navbar-login-btn'>
-          <Link to='/login'>
-            <Button name="Login" btnClass="btn-primary btn-login"/>
-          </Link>
-        </div>
+        { props.loggedInStatus ? 
+        (
+          <div className='profile-picture-container'>
+              <img src={ProfilePic}/>
+          </div>
+        ) : (
+          <div className='navbar-login-btn'>
+            <Link to='/login'>
+              <Button name="Login" btnClass="btn-primary btn-login"/>
+            </Link>
+          </div>
+        )
+        }
         <div className={`nav-btn-container ${menuClass}`} 
         onClick={handleClick}
         >

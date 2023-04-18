@@ -5,9 +5,27 @@ import Facebook from "./assets/icons/facebook-3-logo-svgrepo-com.svg"
 import SocialLoginIcon from './SocialLoginIcon'
 import "./styles/LoginCard.css"
 import {ReactComponent as ArrowLeft} from "./assets/icons/arrow-left-solid.svg"
-import {Link} from "react-router-dom"
+import {Link, useLocation, useNavigate } from "react-router-dom"
+import { useState, useEffect } from 'react'
 
-function LoginCard() {
+function LoginCard(props) {
+
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+    function handleLogin(event) {
+        event.preventDefault()
+        if (email === "dummy@example.com" && password === "password") {
+            props.setIsLoggedIn(true)
+        }
+        const { from } = location.state || { from: { pathname: "/" } };
+        navigate(from);
+    }
+
+
   return (
     <div className='login-card-container'>
         {/* <ArrowLeft className='go-back-nav' /> */}
@@ -17,8 +35,18 @@ function LoginCard() {
                 <p>Please enter your login details to sign in.</p>
             </div>
             <form className='login-form'>
-                <input type='email' placeholder='Email Address'/>
-                <input type='password' placeholder='Password'/>
+                <input 
+                type='email' 
+                placeholder='Email Address'
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                />
+                <input 
+                type='password' 
+                placeholder='Password'
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                />
                 <div className='other-info-container'>
                     <div className='keep-logged-in'>
                         <input type='checkbox'/>
@@ -30,7 +58,7 @@ function LoginCard() {
                         </Link>
                     </div>
                 </div>
-                <button>Log in</button>
+                <button onClick={handleLogin}>Log in</button>
             </form>
             <div className='dont-have-an-acoount'>
                 <p>Don't have an account ?</p>

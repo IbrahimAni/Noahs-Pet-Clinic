@@ -3,10 +3,10 @@ import { Header, NoahsClinicAbout, Services, BookWith, HowItWorks, Testimonials,
 import "./styles/Landing.css"
 
 
-const Landing = () => {
+const Landing = ({loggedIn}) => {
   return (
     <div className='landing-page-container'>
-      <Header />
+      <Header loggedInStatus={loggedIn}/>
       <NoahsClinicAbout />
       <Services />
       <BookWith />
