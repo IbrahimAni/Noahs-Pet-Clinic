@@ -11,6 +11,7 @@ import SignUpCard from "./SignUpCard"
 import ForgotPasswordCard from "./ForgotPasswordCard"
 import EnterOTPCodeCard from "./EnterOTPCodeCard"
 import ResetPasswordCard from "./ResetPasswordCard"
+import NavbarDashboard from "./dashboard/NavbarDashboard"
 
 export {
     Button,
@@ -25,5 +26,6 @@ export {
     SignUpCard,
     ForgotPasswordCard,
     EnterOTPCodeCard,
-    ResetPasswordCard
+    ResetPasswordCard,
+    NavbarDashboard
 }

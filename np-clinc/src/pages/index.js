@@ -4,6 +4,7 @@ import SignUp from "./SignUp";
 import ForgotPassword from "./ForgotPassword";
 import EnterOTPCode from "./EnterOTPCode";
 import ResetPassword from "./ResetPassword";
+import Dashboard from "./dashboard/Dashboard";
 
 export {
   Landing,
@@ -11,5 +12,6 @@ export {
   SignUp,
   ForgotPassword,
   EnterOTPCode,
-  ResetPassword
+  ResetPassword,
+  Dashboard
 }
