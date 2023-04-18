@@ -10,7 +10,7 @@ function App() {
 
   return (
     <Routes>
-        <Route path='/' element={<Landing loggedIn={isLoggedIn}/>}/>
+        <Route path='/' element={<Landing loggedIn={isLoggedIn} setLoggedIn={setIsLoggedIn}/>}/>
         <Route path='/login' element={<Login setIsLoggedIn={setIsLoggedIn}/>}/>
         <Route path='/register' element={<SignUp />}/>
         <Route path='/forgot-password' element={<ForgotPassword />}/>

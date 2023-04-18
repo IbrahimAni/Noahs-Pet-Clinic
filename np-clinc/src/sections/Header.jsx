@@ -5,10 +5,10 @@ import HeaderBanner from "./assets/pexels-anna-tarazevich-14751278.jpg"
 import { Button } from '../components';
 import {Link} from "react-router-dom"
 
-function Header({loggedInStatus}) {
+function Header({loggedInStatus, setLogIn}) {
   return (
     <div className='header-section-container'>
-        <Navbar loggedInStatus={loggedInStatus}/>
+        <Navbar loggedInStatus={loggedInStatus} setLogIn={setLogIn}/>
         <img src={HeaderBanner}/>
         <div className='text-container-header'>
             <h1>Your Family Members Are Important To Us</h1>
