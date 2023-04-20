@@ -1,0 +1,14 @@
+.history-box-container {
+    width: 150px;
+    height: 80px;
+    padding: 5px;
+    background-color: #3a7760;
+    border-radius: 10px;
+}
+
+.history-inner-box-container {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #fff;
+}

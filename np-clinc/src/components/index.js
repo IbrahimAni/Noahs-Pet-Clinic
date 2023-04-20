@@ -12,6 +12,9 @@ import ForgotPasswordCard from "./ForgotPasswordCard"
 import EnterOTPCodeCard from "./EnterOTPCodeCard"
 import ResetPasswordCard from "./ResetPasswordCard"
 import NavbarDashboard from "./dashboard/NavbarDashboard"
+import SideBar from "./dashboard/SideBar"
+import MainDisplay from "./dashboard/MainDisplay"
+import HistoryBox from "./dashboard/HistoryBox"
 
 export {
     Button,
@@ -27,5 +30,8 @@ export {
     ForgotPasswordCard,
     EnterOTPCodeCard,
     ResetPasswordCard,
-    NavbarDashboard
+    NavbarDashboard,
+    SideBar,
+    MainDisplay,
+    HistoryBox
 }
