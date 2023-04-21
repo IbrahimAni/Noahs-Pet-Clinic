@@ -15,6 +15,7 @@ import NavbarDashboard from "./dashboard/NavbarDashboard"
 import SideBar from "./dashboard/SideBar"
 import MainDisplay from "./dashboard/MainDisplay"
 import HistoryBox from "./dashboard/HistoryBox"
+import Appointments from "./dashboard/Appointments"
 
 export {
     Button,
@@ -33,5 +34,6 @@ export {
     NavbarDashboard,
     SideBar,
     MainDisplay,
-    HistoryBox
+    HistoryBox,
+    Appointments
 }

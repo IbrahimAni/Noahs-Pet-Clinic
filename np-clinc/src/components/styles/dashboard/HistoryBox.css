@@ -4,6 +4,7 @@
     padding: 5px;
     background-color: #3a7760;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .history-inner-box-container {

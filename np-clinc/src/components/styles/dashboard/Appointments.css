@@ -1,0 +1,143 @@
+.main-display-inner-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.appointements-info-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.upcoming-appointment-container {
+    background-color: #0f1322;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 0 0 10px;
+    width: 45%;
+}
+
+.upcoming-appointment-container h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.upcoming-appointments-details p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.cancel-appointment-conatiner {
+    position: relative;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    margin-top: 40px;
+}
+
+.cancel-appointment-conatiner button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #1ba0ab;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cancel-appointment-conatiner .cancel {
+    background-color: #fe4c26;
+}
+
+.book-an-appointment-container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.book-an-appointment-container h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.book-an-apoointment-btn {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.book-an-apoointment-btn button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #1ba0ab;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.book-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.add-icon-book-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appointments-history-container {
+    height: 40%;
+    margin-top: auto;
+    background-color: #e3c7b3;
+    border-radius: 10px;
+}
+
+.history-inner-container {
+    display: flex;
+    height: 100%;
+}
+
+.history-text-container {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.history-text-container p,
+h2 {
+    color: #05010a;
+    font-size: 18px;
+    text-align: center;
+}
+
+.history-text-container p {
+    font-size: 16px;
+}
+
+.history-text-container h2 {
+    margin-top: -50px;
+    margin-bottom: 70px
+}
+
+.history-box-conatiners {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}

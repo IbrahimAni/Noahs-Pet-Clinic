@@ -1,0 +1,40 @@
+.medical-report-container {
+    height: 100%;
+}
+
+.medical-report-container h2 {
+    text-align: start;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.medical-form-generation {
+    padding: 10px 15px;
+    margin-top: 30px;
+}
+
+.date-select {
+    margin-bottom: 25px;
+}
+
+.medical-form-generation select {
+    width: 245px;
+    font-size: 18px;
+    height: 39px;
+    border-radius: none;
+}
+
+.appointment-select {
+    margin-bottom: 25px;
+}
+
+.medical-form-generation button {
+    padding: 12px 15px;
+    border-radius: 5px;
+    background-color: #1ba0ab;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}

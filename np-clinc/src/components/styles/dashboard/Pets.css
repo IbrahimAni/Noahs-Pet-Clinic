@@ -1,0 +1,48 @@
+.pets-container {
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pets-container h2 {
+    text-align: start;
+    font-size: 25px;
+}
+
+.pet-registration-center {
+    height: fit-content;
+}
+
+.registered-pet-container {
+    padding: 10px 0px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.registered-pet-container p {
+    padding: 10px 10px;
+    font-weight: 500;
+    background-color: #faf4f0;
+    border-radius: 10px
+}
+
+.add-new-pet-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.add-new-pet-container {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #95cfd9;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+}
+
+.add-new-pet-container:hover {
+    opacity: 0.8;
+}
