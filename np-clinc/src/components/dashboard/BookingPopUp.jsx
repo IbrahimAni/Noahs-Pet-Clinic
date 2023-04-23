@@ -1,16 +1,11 @@
 import React from 'react'
 import "../styles/dashboard/BookingPopUp.css"
-import {ReactComponent as CloseTab} from "../assets/icons/dashboardIcons/circle-xmark-solid.svg"
 
-function BookingPopUp({setBookAppointment}) {
+function BookingPopUp() {
 
-    function closeBookAppintment() {
-        setBookAppointment(false)
-    }
   return (
     <div className='booking-pop-up'>
         <div className='booking-inner-pop-up'>
-            {/* <CloseTab className='tab-close' onClick={closeBookAppintment}/> */}
             <h1>Appointment Booking</h1>
             <div className='booking-user-info'>
                 <p>FullName</p>

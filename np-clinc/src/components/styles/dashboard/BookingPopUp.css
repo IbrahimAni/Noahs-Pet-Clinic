@@ -1,18 +1,21 @@
 .booking-pop-up {
-    width: 50%;
+    width: 40%;
     height: 100%;
     background-color: #fff;
     padding: 10px 20px;
-    transition: 0.3s ease-in;
+    border: 1px solid grey;
 }
 
 .booking-inner-pop-up {
     height: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .booking-inner-pop-up h1 {
-    font-size: 24px;
+    font-size: 26px;
+    margin: 10px 0;
 }
 
 .booking-user-info p {
@@ -81,7 +84,7 @@ label {
 .proceed-to-pay{
     display: flex;
     justify-content: center;
-    margin-top: 6px;
+    margin-top: auto;
 }
 
 .proceed-to-pay button {
@@ -108,3 +111,13 @@ label {
     fill: red;
     cursor: pointer;
 }
+
+textarea {
+    resize: none;
+    font-family: inherit;
+}
+
+textarea:focus {
+    outline: none;
+}
+

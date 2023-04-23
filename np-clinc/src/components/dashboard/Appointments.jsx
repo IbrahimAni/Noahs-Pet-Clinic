@@ -3,6 +3,7 @@ import {ReactComponent as AddIcon} from "../assets/icons/dashboardIcons/circle-p
 import HistoryBox from './HistoryBox'
 import "../styles/dashboard/Appointments.css"
 import BookingPopUp from './BookingPopUp'
+import {Link} from "react-router-dom"
 
 function Appointments() {
 
@@ -29,7 +30,7 @@ function Appointments() {
                         <AddIcon className='book-icon'/>
                     </div>
                     <div className='book-an-apoointment-btn'>
-                        <button onClick={displayBookAppointmentPage}>Book An Appointment</button>
+                        <Link to='/book-appointments'><button>Book An Appointment</button></Link>
                     </div>
                 </div>
             </div>
