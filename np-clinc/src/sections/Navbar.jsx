@@ -40,7 +40,7 @@ const Navbar = (props) => {
               props.loggedInStatus ? 
               (
               <ul className={`nav-ul-list ${menuOpen ? "showNav" : ""}`}>
-                <li>Dashboard</li>
+                <Link to='/dashboard'><li>Dashboard</li></Link>
                 <li>Home</li>
                 <li>Appointments</li>
                 <li>Doctors</li>

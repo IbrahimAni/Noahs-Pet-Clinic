@@ -1,9 +1,11 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {ReactComponent as AddIcon} from "../assets/icons/dashboardIcons/circle-plus-svgrepo-com.svg"
 import HistoryBox from './HistoryBox'
 import "../styles/dashboard/Appointments.css"
+import BookingPopUp from './BookingPopUp'
 
 function Appointments() {
+
   return (
     <div className='main-display-inner-container appointments'>
             <div className='appointements-info-container'>
@@ -27,7 +29,7 @@ function Appointments() {
                         <AddIcon className='book-icon'/>
                     </div>
                     <div className='book-an-apoointment-btn'>
-                        <button>Book An Appointment</button>
+                        <button onClick={displayBookAppointmentPage}>Book An Appointment</button>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import "../styles/dashboard/DashBoardMenu.css"
 import PetPic from "../assets/pexels-muhannad-alatawi-58997.jpg"
+import {ReactComponent as Time} from "../assets/icons/dashboardIcons/calendar-check-solid.svg"
 
 function DashBoardMenu() {
   return (
@@ -9,21 +10,37 @@ function DashBoardMenu() {
             <h1>Good Morning Andrew</h1>
         </div>
         <div className='dashboard-menu-items-container'>
-            <div className='dashboard-pet-information'>
-                <div className='pet-image-container'>
-                    <img src={PetPic}/>
-                </div>
-                <p>Buddy</p>
-                <p>2 Years</p>
-                <p>2.5ft</p>
-                <p>25kg</p>
-            </div>
             <div className='upcoming-appointment-countdown'>
-                <h1>Countdown To Upcoming Appointment</h1>
-                <h2>00:12:50:23</h2>
-                <p>You have an appoinment coming up by</p>
-                <p>16/04/23</p>
-                <p>Dr. Mufasa</p>
+                <h1>You have an Appointment Coming up in</h1>
+                 <div className='time-container'>
+                    <div className='countdown-days con'>
+                        <div className='rectangle'>
+                            <p>4</p>
+                        </div>
+                        <p className='description'>DAYS</p>
+                    </div>
+                    <div className='countdown-hours con'>
+                        <div className='rectangle'>
+                            <p>3</p>
+                        </div>
+                        <p className='description'>HOURS</p>
+                    </div>
+                    <div className='countdown-minutes con'>
+                        <div className='rectangle'>
+                            <p>5</p>
+                        </div>
+                        <p className='description'>MINUTES</p>  
+                    </div>
+                    <div className='countdown-seconds con'>
+                        <div className='rectangle'>
+                            <p>55</p>
+                        </div>
+                        <p className='description'>SECONDS</p>
+                    </div>
+                </div>
+                <div className='additional-appointment-info'>
+                    <button>Go to Appointment</button>
+                </div>
             </div>
         </div>
     </div>

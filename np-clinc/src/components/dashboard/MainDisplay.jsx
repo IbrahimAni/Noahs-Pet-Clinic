@@ -5,11 +5,17 @@ import Appointments from './Appointments'
 import Pets from './Pets'
 import MedicalReport from './MedicalReport'
 import Billing from './Billing'
+import { useEffect, useState } from 'react'
 
-function MainDisplay() {
+function MainDisplay({renderPage}) {
+
   return (
     <div className='main-display-dasboard-container'>
-        <DashBoardMenu />
+        {/* {renderPage.dashboard &&  <DashBoardMenu />} */}
+        <Appointments />
+        {/* {renderPage.pets && <Pets />}
+        {renderPage.medicalReports && <MedicalReport />}
+        {renderPage.billing && <Billing />} */}
     </div>
   )
 }

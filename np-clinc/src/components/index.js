@@ -16,6 +16,7 @@ import SideBar from "./dashboard/SideBar"
 import MainDisplay from "./dashboard/MainDisplay"
 import HistoryBox from "./dashboard/HistoryBox"
 import Appointments from "./dashboard/Appointments"
+import BookingPopUp from "./dashboard/BookingPopUp"
 
 export {
     Button,
@@ -35,5 +36,6 @@ export {
     SideBar,
     MainDisplay,
     HistoryBox,
-    Appointments
+    Appointments,
+    BookingPopUp
 }

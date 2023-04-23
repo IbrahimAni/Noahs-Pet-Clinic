@@ -1,0 +1,110 @@
+.booking-pop-up {
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    transition: 0.3s ease-in;
+}
+
+.booking-inner-pop-up {
+    height: 100%;
+    position: relative;
+}
+
+.booking-inner-pop-up h1 {
+    font-size: 24px;
+}
+
+.booking-user-info p {
+    font-size: 13px;
+}
+
+.booking-pet-info select {
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.appointment-title {
+    width: 70%;
+    padding: 5px 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.appointment-title:focus {
+    outline: none;
+}
+
+.problem-description {
+    width: 70%;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 13px;
+}
+
+.date-book {
+    width: 40%;
+    height: 30px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.booking-form button {
+    padding: 9px 5px;
+    border: 2px solid black;
+    outline: none;
+    color: rgb(11, 11, 11);
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    width: 40%;
+}
+
+.terms-and-conditiions {
+    font-size: 9px;
+}
+
+.terms-and-conditiions p {
+    color: black;
+}
+
+.proceed-to-pay{
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+}
+
+.proceed-to-pay button {
+    padding: 10px 15px;
+    background-color: #1ba0ab;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.book-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.tab-close {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: -5px;
+    fill: red;
+    cursor: pointer;
+}
