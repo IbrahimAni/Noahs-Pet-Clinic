@@ -1,0 +1,92 @@
+.appointment-info-container-card {
+    width: 40%;
+    height: 90%;
+    padding: 20px;
+}
+
+.appointment-inner-container-details {
+    height: 100%;
+}
+
+.appointment-inner-container-details h2 {
+    text-align: start;
+    font-size: 25px;
+}
+
+.time-selected {
+    font-size: 20px;
+    color: #1ab0ab;
+    margin-bottom: 20px;
+}
+
+.main-basic-details span {
+    font-size: 12px;
+    color: grey;
+}
+
+.main-basic-details-one, .main-basic-details-two {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.apointment-status {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: #95cfd9;
+}
+
+.apointment-status div {
+    display: flex;
+    align-items: center;
+}
+
+.apointment-status div input, label  {
+    font-size: 18px;
+}
+
+.pet-appoinment-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.pet-name-info {
+    width: 50%;
+}
+
+.pet-name-info p:nth-child(2) {
+    font-size: 17px;
+}
+
+.title-pet-details {
+    font-size: 12px;
+    color: grey;
+}
+
+.problem-description-apointment-details {
+    margin-bottom: 20px;
+}
+
+.problem-description-apointment-details p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.doctor-assigned-section-details p:first-child {
+    font-size: 12px;
+    color: grey;
+}
+
+.status-icons {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.color-green {
+    fill: green;
+}

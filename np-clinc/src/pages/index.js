@@ -6,6 +6,7 @@ import EnterOTPCode from "./EnterOTPCode";
 import ResetPassword from "./ResetPassword";
 import Dashboard from "./dashboard/Dashboard";
 import BookAppointment from "./BookAppointment";
+import AppointmentsDetails from "./dashboard/AppointmentsDetails";
 
 export {
   Landing,
@@ -15,5 +16,6 @@ export {
   EnterOTPCode,
   ResetPassword,
   Dashboard,
-  BookAppointment
+  BookAppointment,
+  AppointmentsDetails
 }

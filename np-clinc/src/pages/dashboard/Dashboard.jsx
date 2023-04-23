@@ -6,8 +6,8 @@ import { useEffect, useState } from 'react'
 function Dashboard() {
 
     const [renderPage, setRenderPage] = useState({
-        dashboard: false,
-        appontments: true,
+        dashboard: true,
+        appontments: false,
         pets: false,
         medicalReports: false,
         billing: false

@@ -11,11 +11,11 @@ function MainDisplay({renderPage}) {
 
   return (
     <div className='main-display-dasboard-container'>
-        {/* {renderPage.dashboard &&  <DashBoardMenu />} */}
-        <Appointments />
-        {/* {renderPage.pets && <Pets />}
+        {renderPage.dashboard &&  <DashBoardMenu />}
+        {renderPage.appointments && <Appointments />}
+        {renderPage.pets && <Pets />}
         {renderPage.medicalReports && <MedicalReport />}
-        {renderPage.billing && <Billing />} */}
+        {renderPage.billing && <Billing />}
     </div>
   )
 }
