@@ -8,6 +8,7 @@ import Dashboard from "./dashboard/Dashboard";
 import BookAppointment from "./BookAppointment";
 import AppointmentsDetails from "./dashboard/AppointmentsDetails";
 import AppointmentsHistoryDetails from "./dashboard/AppointmentsHistoryDetails";
+import RegisterNewPet from "./dashboard/RegisterNewPet";
 
 export {
   Landing,
@@ -19,5 +20,6 @@ export {
   Dashboard,
   BookAppointment,
   AppointmentsDetails,
-  AppointmentsHistoryDetails
+  AppointmentsHistoryDetails,
+  RegisterNewPet
 }

@@ -1,0 +1,51 @@
+.register-new-pet-card-container {
+    width: 45%;
+    height: 90%;
+    border: 1px solid grey;
+    padding: 20px;
+}
+
+.register-new-pet-card-inner-container h1 {
+    margin-bottom: 20px;
+}
+ 
+.pet-register-form {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pet-register-form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.pet-register-form div label {
+    font-size: 16px;
+}
+
+.pet-register-form div input {
+    width: 95%;
+    padding: 5px 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.pet-register-form div input:focus {
+    outline: none;
+}
+
+.pet-register-form button {
+    padding: 10px 15px;
+    background-color: #1ba0ab;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}

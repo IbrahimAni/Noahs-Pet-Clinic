@@ -1,5 +1,5 @@
 import './App.css';
-import {Landing, Login, SignUp, ForgotPassword, EnterOTPCode, ResetPassword, Dashboard, BookAppointment, AppointmentsDetails, AppointmentsHistoryDetails} from "./pages" 
+import {Landing, Login, SignUp, ForgotPassword, EnterOTPCode, ResetPassword, Dashboard, BookAppointment, AppointmentsDetails, AppointmentsHistoryDetails, RegisterNewPet} from "./pages" 
 import {Routes, Route} from "react-router-dom"
 import { useState, useEffect } from 'react';
 
@@ -20,6 +20,7 @@ function App() {
         <Route path='/book-appointments' element={<BookAppointment />}/>
         <Route path='/appointments-details' element={<AppointmentsDetails />}/>
         <Route path='/history-appointments-details' element={<AppointmentsHistoryDetails />}/>
+        <Route path='/register-pet' element={<RegisterNewPet />}/>
     </Routes>
   );
 }
