@@ -5,7 +5,7 @@ import "../styles/dashboard/AppointmentsDetails.css"
 function AppointmentsDetails() {
   return (
     <div className='appointment-details-page-container'>
-        <AppointmentInfoCard />
+        <AppointmentInfoCard confirmed='Confirmed'/>
     </div>
   )
 }

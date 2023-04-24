@@ -4,6 +4,11 @@ import HistoryBox from './HistoryBox'
 import "../styles/dashboard/Appointments.css"
 import {Link} from "react-router-dom"
 import CancelAppointment from './CancelAppointment'
+import {ReactComponent as Time} from "../assets/icons/dashboardIcons/date.svg"
+import {ReactComponent as Title} from "../assets/icons/dashboardIcons/title.svg" 
+import {ReactComponent as Doctor} from "../assets/icons/dashboardIcons/doctor.svg"
+import {ReactComponent as PetIcon} from "../assets/icons/dashboardIcons/dog.svg"  
+import {ReactComponent as Check} from "../assets/icons/dashboardIcons/circle-check-solid.svg"
 
 function Appointments() {
 
@@ -19,11 +24,11 @@ function Appointments() {
                 <div className='upcoming-appointment-container'>
                     <h1>Upcoming Appointment</h1>
                     <div className='upcoming-appointments-details'>
-                        <p>Jun 20 13:00</p>
-                        <p>Noahs Pet Clinic</p>
-                        <p>Bingo</p>
-                        <p>Dr. Mukesh Ambani</p>
-                        <p>Confirmed</p>
+                        <div><Time className='appointment-details-icons-small'/> <p>Jun 20 13:00</p></div>
+                        <div><Title className='appointment-details-icons-small'/> <p>Noahs Pet Clinic</p></div>
+                        <div><PetIcon className='appointment-details-icons-small'/> <p>Bingo</p></div>
+                        <div><Doctor className='appointment-details-icons-small'/> <p>Dr. Mukesh Ambani</p></div>
+                        <div><Check className='appointment-details-icons-small con'/> <p>Confirmed</p></div> 
                     </div>
                     <div className='cancel-appointment-conatiner'>
                         <Link to='/appointments-details'><button>View Details</button></Link>
@@ -47,7 +52,9 @@ function Appointments() {
                         <p>View details about your previous Appointments</p>
                     </div>
                     <div className='history-box-conatiners'>
+                        <Link to='/history-appointments-details' style={{textDecoration:"none"}}>
                         <HistoryBox />
+                        </Link>
                     </div>
                 </div>
             </div>

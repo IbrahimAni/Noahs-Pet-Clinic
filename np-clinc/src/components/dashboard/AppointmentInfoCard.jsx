@@ -21,7 +21,7 @@ function AppointmentInfoCard(props) {
                 </div>
             </div>
             <div className='apointment-status'>
-                <div><Confirmed className='status-icons color-green'/> <p>Confirmed</p></div>
+                <div><Confirmed className='status-icons color-green'/> <p>{props.confirmed}</p></div>
                 <div><Loading className='status-icons'/><p>Yet to be Confirmed</p></div>
             </div>
             <div className='pet-appoinment-details'>

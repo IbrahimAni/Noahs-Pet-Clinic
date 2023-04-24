@@ -10,11 +10,11 @@ function CancelAppointment({setClickCancel}) {
 
   return (
     <div className='cancel-appointment-conatiner-pop-up'>
-        <Cancel className='close-page-cancel'/>
+        <Cancel className='close-page-cancel' onClick={CloseCancelPage}/>
         <div className='cancel-appointment-inner-container'>
             <p>Are you Sure You want To Cancel Your Appointment ?</p>
             <div className='pay-cancelation-fee-btn-container'>
-                <button onClick={CloseCancelPage}>Pay Cancellation Fee</button>
+                <button>Pay Cancellation Fee</button>
             </div>
         </div>
     </div>

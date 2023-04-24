@@ -11,6 +11,9 @@
     height: 200px;
     width: 450px;
     border: 1px solid gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 5s ease-in-out;
+    animation: slideIn 0.5s ease-in-out forwards;
 }
 
 .close-page-cancel {
@@ -45,4 +48,15 @@
     color: #fff;
     font-size: 16px;
     cursor: pointer;
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }

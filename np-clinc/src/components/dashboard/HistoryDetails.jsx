@@ -5,7 +5,7 @@ import "../styles/dashboard/HistoryDetails.css"
 function HistoryDetails() {
   return (
     <div className='history-details-container'>
-        <AppointmentInfoCard>
+        <AppointmentInfoCard confirmed='Attended'>
             <div className='history-added-info'>
                 <div className='doctors-diagnosis-container'>
                     <p className='title-pet-details'>Diagnosis report</p>
