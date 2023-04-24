@@ -17,6 +17,8 @@ import MainDisplay from "./dashboard/MainDisplay"
 import HistoryBox from "./dashboard/HistoryBox"
 import Appointments from "./dashboard/Appointments"
 import BookingPopUp from "./dashboard/BookingPopUp"
+import AppointmentInfoCard from "./dashboard/AppointmentInfoCard"
+import HistoryDetails from "./dashboard/HistoryDetails"
 
 export {
     Button,
@@ -37,5 +39,7 @@ export {
     MainDisplay,
     HistoryBox,
     Appointments,
-    BookingPopUp
+    BookingPopUp,
+    AppointmentInfoCard,
+    HistoryDetails
 }

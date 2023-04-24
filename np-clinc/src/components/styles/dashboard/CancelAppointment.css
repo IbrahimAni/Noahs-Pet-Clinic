@@ -1,0 +1,48 @@
+.cancel-appointment-conatiner-pop-up{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    padding: 10px 50px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    height: 200px;
+    width: 450px;
+    border: 1px solid gray;
+}
+
+.close-page-cancel {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    fill: red;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.cancel-appointment-inner-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cancel-appointment-conatiner-pop-up p {
+    font-size: 19px;
+}
+
+.pay-cancelation-fee-btn-container {
+    margin-top: 10px;
+}
+
+.pay-cancelation-fee-btn-container button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #1ba0ab;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}

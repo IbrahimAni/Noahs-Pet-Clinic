@@ -2,8 +2,9 @@ import React from 'react'
 import "../styles/dashboard/AppointmentInfoCard.css"
 import {ReactComponent as Confirmed} from "../assets/icons/dashboardIcons/circle-check-solid.svg"
 import {ReactComponent as Loading} from "../assets/icons/dashboardIcons/hourglass-half-solid.svg"
+import DoctorProfilePic from "../assets/dashboardImages/pexels-mateus-souza-3586798.jpg"
 
-function AppointmentInfoCard() {
+function AppointmentInfoCard(props) {
   return (
     <div className='appointment-info-container-card'>
         <div className='appointment-inner-container-details'>
@@ -39,8 +40,16 @@ function AppointmentInfoCard() {
             </div>
             <div className='doctor-assigned-section-details'>
                 <p>Doctor Assigned</p>
-                <p>Dr. Mukesh Amabani</p>
+                <div className='doctor-details-info'>
+                    <div className='image-container-doctor-details'>
+                        <img src={DoctorProfilePic}/>
+                    </div>
+                    <p>Dr. Mukesh Amabani</p>
+                </div>
             </div>
+            {
+                props.children
+            }
         </div>
     </div>
   )

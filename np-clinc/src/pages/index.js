@@ -7,6 +7,7 @@ import ResetPassword from "./ResetPassword";
 import Dashboard from "./dashboard/Dashboard";
 import BookAppointment from "./BookAppointment";
 import AppointmentsDetails from "./dashboard/AppointmentsDetails";
+import AppointmentsHistoryDetails from "./dashboard/AppointmentsHistoryDetails";
 
 export {
   Landing,
@@ -17,5 +18,6 @@ export {
   ResetPassword,
   Dashboard,
   BookAppointment,
-  AppointmentsDetails
+  AppointmentsDetails,
+  AppointmentsHistoryDetails
 }

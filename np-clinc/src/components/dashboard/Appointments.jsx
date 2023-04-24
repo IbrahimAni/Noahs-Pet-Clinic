@@ -2,10 +2,16 @@ import React, {useState, useEffect} from 'react'
 import {ReactComponent as AddIcon} from "../assets/icons/dashboardIcons/circle-plus-svgrepo-com.svg"
 import HistoryBox from './HistoryBox'
 import "../styles/dashboard/Appointments.css"
-import BookingPopUp from './BookingPopUp'
 import {Link} from "react-router-dom"
+import CancelAppointment from './CancelAppointment'
 
 function Appointments() {
+
+    const [clickCancel, setClickCancel] = useState(false);
+
+    function toggleCancelPage() {
+        setClickCancel(true)
+    }
 
   return (
     <div className='main-display-inner-container appointments'>
@@ -20,8 +26,8 @@ function Appointments() {
                         <p>Confirmed</p>
                     </div>
                     <div className='cancel-appointment-conatiner'>
-                        <button>View Details</button>
-                        <button className='cancel'>Cancel</button>
+                        <Link to='/appointments-details'><button>View Details</button></Link>
+                        <button className='cancel' onClick={toggleCancelPage}>Cancel</button>
                     </div>
                 </div>
                 <div className='book-an-appointment-container'> 
@@ -45,6 +51,9 @@ function Appointments() {
                     </div>
                 </div>
             </div>
+            {
+                clickCancel && <CancelAppointment setClickCancel={setClickCancel}/>
+            }
         </div>
   )
 }
