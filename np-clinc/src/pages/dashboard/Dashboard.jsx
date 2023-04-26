@@ -3,7 +3,7 @@ import React from 'react'
 import { NavbarDashboard, SideBar, MainDisplay } from '../../components'
 import { useEffect, useState } from 'react'
 
-function Dashboard() {
+function Dashboard({setIsLoggedIn}) {
 
     const [renderPage, setRenderPage] = useState({
         dashboard: true,
@@ -16,7 +16,7 @@ function Dashboard() {
   return (
     <div className='dashboard-container'>
         <NavbarDashboard />
-        <SideBar setRenderPage={setRenderPage} renderPage={renderPage}/>
+        <SideBar setRenderPage={setRenderPage} renderPage={renderPage} setIsLoggedIn={setIsLoggedIn}/>
         <MainDisplay renderPage={renderPage}/>
     </div>
   )

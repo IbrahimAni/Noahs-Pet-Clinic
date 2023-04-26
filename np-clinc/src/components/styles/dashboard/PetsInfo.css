@@ -1,0 +1,58 @@
+.pets-info-container {
+    width: 50%;
+    border: 1px solid;
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+}
+
+.pet-info-edit-form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.pet-info-edit-form div label {
+    font-size: 13px;
+    color: grey;
+}
+
+.pet-info-edit-form div input {
+    width: 90%;
+    padding: 5px 5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.pet-info-edit-form div input:focus {
+    outline: none;
+}
+
+.edit-pets-details-btn {
+    margin-top: 10px;
+}
+
+.edit-pets-details-btn button {
+    width: 20%;
+    margin-left: auto;
+    padding: 10px 15px;
+    background-color: #1ba0ab;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pet-info-icon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.pet-info-icon:hover {
+    fill: red;
+}

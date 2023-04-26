@@ -7,9 +7,6 @@ import "../styles/dashboard/NavbarDashboard.css"
 function NavbarDashboard() {
   return (
     <div className='navbar-dashboard-container'>
-        <div className='search-container-navbar'>
-            <input type='text' placeholder='Search something...'></input>
-        </div>
         <div className='user-info-container'>
             <div className='items-container-user'>
                 <NotificationIcon className='navbar-icons spacer'/>

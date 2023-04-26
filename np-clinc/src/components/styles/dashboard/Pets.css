@@ -24,7 +24,7 @@
     padding: 10px 10px;
     font-weight: 500;
     background-color: #faf4f0;
-    border-radius: 10px
+    border-radius: 10px;
 }
 
 .add-new-pet-icon {
@@ -45,4 +45,16 @@
 
 .add-new-pet-container:hover {
     opacity: 0.8;
+}
+
+.edit-pets-info-page {
+    border: 1px solid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
