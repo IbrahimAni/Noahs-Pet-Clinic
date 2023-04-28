@@ -5,6 +5,7 @@ import Appointments from './Appointments'
 import Pets from './Pets'
 import MedicalReport from './MedicalReport'
 import Billing from './Billing'
+import Chat from './Chat'
 import { useEffect, useState } from 'react'
 
 function MainDisplay({renderPage}) {
@@ -16,6 +17,7 @@ function MainDisplay({renderPage}) {
         {renderPage.pets && <Pets />}
         {renderPage.medicalReports && <MedicalReport />}
         {renderPage.billing && <Billing />}
+        {renderPage.chat && <Chat />}
     </div>
   )
 }

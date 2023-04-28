@@ -35,25 +35,25 @@ function DashBoardMenu() {
                         <div className='rectangle'>
                             <p>{days}</p>
                         </div>
-                        <p className='description'>DAYS</p>
+                        <p className='description-'>DAYS</p>
                     </div>
                     <div className='countdown-hours con'>
                         <div className='rectangle'>
                             <p>{hour}</p>
                         </div>
-                        <p className='description'>HOURS</p>
+                        <p className='description-'>HOURS</p>
                     </div>
                     <div className='countdown-minutes con'>
                         <div className='rectangle'>
                             <p>{min}</p>
                         </div>
-                        <p className='description'>MINUTES</p>  
+                        <p className='description-'>MINUTES</p>  
                     </div>
                     <div className='countdown-seconds con'>
                         <div className='rectangle'>
                             <p>{secs}</p>
                         </div>
-                        <p className='description'>SECONDS</p>
+                        <p className='description-'>SECONDS</p>
                     </div>
                 </div>
                 <div className='additional-appointment-info'>

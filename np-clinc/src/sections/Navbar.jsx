@@ -13,7 +13,10 @@ import {ReactComponent as SignOutIcon} from "./assets/icons/navbarIcons/arrow-ri
 
 const Navbar = (props) => {
 
+    const profileRef = useRef(null);
+
     const [menuOpen, setMenuOpen] = useState(false)
+    const [profileOpen, setProfileOpen] = useState(false)
 
     function handleClick() {
       setMenuOpen(!menuOpen);
@@ -27,12 +30,30 @@ const Navbar = (props) => {
         props.setLogIn(false);
       }
     }
+
+    function handleProfileShow() {
+      setProfileOpen(prev => !prev)
+    }
+
+     useEffect(() => {
+        const handleOutsideClick = (event) => {
+          if (profileRef.current && !profileRef.current.contains(event.target)) {
+            setProfileOpen(false);
+          }
+        }
+        document.addEventListener('click', handleOutsideClick);
+        return () => {
+          document.removeEventListener('click', handleOutsideClick);
+        };
+    },[]);
  
   return (
     <div className='navbar-conatiner'>
       <div className='nav-items-container'>
         <div className='company-logo'>
-          <h2>Noah's.</h2>
+          <Link to='/' style={{textDecoration: "none", color: "black"}}>
+            <h1>Noah's.</h1>
+          </Link>
         </div>
         <div className='navbar-divider'>
           <div className={`navbar-items ${navCon}`}>
@@ -40,7 +61,7 @@ const Navbar = (props) => {
               props.loggedInStatus ? 
               (
               <ul className={`nav-ul-list ${menuOpen ? "showNav" : ""}`}>
-                <Link to='/dashboard'><li>Dashboard</li></Link>
+                <Link to='/dashboard' style={{textDecoration: 'none'}}><li>Dashboard</li></Link>
                 <li>Home</li>
                 <li>Appointments</li>
                 <li>Doctors</li>
@@ -64,18 +85,20 @@ const Navbar = (props) => {
           </div>
           { props.loggedInStatus ? 
           (
-            <div className='profile-picture-container'>
+            <div className='profile-picture-container' onClick={handleProfileShow} ref={profileRef}>
                 <img src={ProfilePic}/>
-                <div className='profile-container'>
-                  <ul className='profile-items-container'>
-                    <li><Profile className='profile-icons'/> Profile</li>
-                    <li><PetIcon className='profile-icons'/> My Pets</li>
-                    <li><AppointmentIcon className='profile-icons'/> My Appointments</li>
-                    <li><SupportIcon className='profile-icons'/> Support</li>
-                    <li><SettingsIcon className='profile-icons'/>Account Settings</li>
-                    <li onClick={handleLogout}><SignOutIcon className='profile-icons'/> Sign Out</li>
-                  </ul>
-                </div>
+                { profileOpen &&
+                  <div className='profile-container'>
+                    <ul className='profile-items-container'>
+                      <li><Profile className='profile-icons'/> Profile</li>
+                      <li><PetIcon className='profile-icons'/> My Pets</li>
+                      <li><AppointmentIcon className='profile-icons'/> My Appointments</li>
+                      <li><SupportIcon className='profile-icons'/> Support</li>
+                      <li><SettingsIcon className='profile-icons'/>Account Settings</li>
+                      <li onClick={handleLogout}><SignOutIcon className='profile-icons'/> Sign Out</li>
+                    </ul>
+                  </div>
+                }
             </div>
           ) : (
             <div className='navbar-login-btn'>

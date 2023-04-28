@@ -13,9 +13,9 @@
 .text-container-header {
     width: 600px;
     position: absolute;
-    top: 150px;
+    top: 200px;
     left: 90px;
-    color: #fff;
+    color: black;
 }
 
 .text-container-header h1 {
@@ -38,6 +38,18 @@
     color: #fff;
 }
 
+.header-ilustration-container {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 30%;
+    right: 6%;
+}
+
+.header-ilustration-container img {
+    width: 100%;
+    height: 100%;
+}
 
 @media screen and (max-width: 768px) {
     .text-container-header {

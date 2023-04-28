@@ -1,0 +1,44 @@
+.unread-message-card {
+    display: flex;
+    background-color: rgb(185, 185, 185);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.unread-user-information {
+    margin-left: 15px
+}
+
+.unread-user-information h3:first-child {
+    font-size: 16px;
+}
+
+.unread-user-information p {
+    font-size: 13px;
+}
+
+.unread-time {
+    margin-left: auto;
+}
+
+.unread-time p {
+    font-size: 11px;
+}
+
+.unread-profile-pic-container {
+    position: relative;
+}
+
+.unread-count {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    bottom: -12px;
+    right: 0;
+    background-color: rgb(18, 193, 71);
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 3px 5px;
+    color: #fff;
+}

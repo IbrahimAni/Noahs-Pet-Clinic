@@ -68,6 +68,15 @@ span {
     cursor: pointer;
 }
 
+.password-icons-sign-up {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+}
+
 
 @Media screen and (max-width: 768px) {
     .sign-up-container {

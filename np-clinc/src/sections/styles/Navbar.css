@@ -9,15 +9,16 @@
     left: 0;
     right: 0;
     padding-left: 80px;
-    padding-right: 40px;
+    padding-right: 10px;
     box-sizing: border-box;
     margin-top: 10px;
 }
 
 
-.company-logo h2 {
+.company-logo h1 {
     color: #fff;
     cursor: pointer;
+    color: black;
 }
 
 .nav-items-container {
@@ -47,6 +48,7 @@
     list-style: none;
     margin: 0 15px;
     color: white;
+    color: black;
 }
 
 .login-nav-not {
@@ -124,8 +126,8 @@
 }
 
 .profile-picture-container {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -141,14 +143,10 @@
     padding: 15px 0;
     left: 81.5%;
     top: 57px;
-    background-color: #fff;
+    background-color: #f9f9f9;
     border-radius: 5px;
     width: 18%;
-    display: none;
-}
-
-.profile-picture-container:hover .profile-container {
-    display: block;
+    z-index: 1;
 }
 
 .profile-items-container li {

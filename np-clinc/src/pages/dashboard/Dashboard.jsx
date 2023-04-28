@@ -10,7 +10,8 @@ function Dashboard({setIsLoggedIn}) {
         appontments: false,
         pets: false,
         medicalReports: false,
-        billing: false
+        billing: false,
+        chat: false
     })
 
   return (

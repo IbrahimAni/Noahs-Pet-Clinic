@@ -8,7 +8,7 @@ import "./styles/HowItWorks.css"
 import {Link} from "react-router-dom"
 
 
-function HowItWorks() {
+function HowItWorks({loggedInStatus}) {
   return (
     <div className='how-it-works-container'>
         <div className='how-it-works-text-container'>
@@ -21,7 +21,7 @@ function HowItWorks() {
             <HowItWorksCard img={DogBook} description='Attend the appointment for pet health guidance'/>
         </div>
         <div className='how-it-works-btn-container'>
-            <Link to='/login'>
+            <Link to={loggedInStatus ? "/dashboard" : "/login"}>
                 <Button name="Book An Appointment" btnClass="btn-primary btn-no-bg"/>
             </Link>
         </div>

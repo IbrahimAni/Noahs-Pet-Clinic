@@ -7,10 +7,10 @@ const Landing = ({loggedIn, setLoggedIn}) => {
   return (
     <div className='landing-page-container'>
       <Header loggedInStatus={loggedIn} setLogIn={setLoggedIn}/>
-      <NoahsClinicAbout />
+      <NoahsClinicAbout loggedInStatus={loggedIn}/>
       <Services />
       <BookWith />
-      <HowItWorks />
+      <HowItWorks loggedInStatus={loggedIn}/>
       <Testimonials />
       <OurVets />
       <Articles />

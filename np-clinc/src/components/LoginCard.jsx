@@ -7,6 +7,8 @@ import "./styles/LoginCard.css"
 import {ReactComponent as ArrowLeft} from "./assets/icons/arrow-left-solid.svg"
 import {Link, useLocation, useNavigate } from "react-router-dom"
 import { useState, useEffect } from 'react'
+import {ReactComponent as Show} from "./assets/icons/eye-solid.svg"
+import {ReactComponent as Hide} from "./assets/icons/eye-slash-solid.svg"
 
 function LoginCard(props) {
 
@@ -15,6 +17,7 @@ function LoginCard(props) {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [showPassword, setShowPassword] = useState(false)
 
     function handleLogin(event) {
         event.preventDefault()
@@ -25,6 +28,8 @@ function LoginCard(props) {
         navigate(from);
     }
 
+    const icon = showPassword ? <Hide className='password-icons' onClick={() => setShowPassword(false)}/> : <Show className='password-icons' onClick={() => setShowPassword(true)}/> ;
+    const passType = showPassword ? "text" : "password";
 
   return (
     <div className='login-card-container'>
@@ -35,18 +40,21 @@ function LoginCard(props) {
                 <p>Please enter your login details to sign in.</p>
             </div>
             <form className='login-form'>
-                <input 
-                type='email' 
-                placeholder='Email Address'
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                    <input 
+                    type='email' 
+                    placeholder='Email Address'
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                 />
-                <input 
-                type='password' 
-                placeholder='Password'
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                <div className='password-login-input'>
+                    <input 
+                    type={passType} 
+                    placeholder='Password'
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                 />
+                    {icon}
+                </div>
                 <div className='other-info-container'>
                     <div className='keep-logged-in'>
                         <input type='checkbox'/>

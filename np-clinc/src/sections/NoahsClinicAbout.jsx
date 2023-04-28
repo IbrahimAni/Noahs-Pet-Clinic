@@ -4,7 +4,7 @@ import CompanyPic from "./assets/pexels-ensaio-da-cegueira-15215418.jpg"
 import "./styles/NoahsClinicAbout.css"
 import {Link} from "react-router-dom"
 
-function NoahsClinicAbout() {
+function NoahsClinicAbout({loggedInStatus}) {
   return (
     <div className='about-the-clinic-container'>
         <div className='image-container-noahs-clinic'>
@@ -20,7 +20,7 @@ function NoahsClinicAbout() {
                     At Noah's Pet Clinic, we offer a wide range of services to keep your pets healthy and happy. From routine wellness exams and vaccinations to surgery and grooming, we have everything your pet needs to stay healthy and comfortable.
                 </p>
                 <div className='btn-container-about'>
-                    <Link to='/login'>
+                    <Link to={loggedInStatus ? "/dashboard" : "/login"}>
                         <Button name="Book An Appointment" btnClass='btn-primary btn-no-bg'/>
                     </Link>
                 </div>

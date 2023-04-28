@@ -5,6 +5,7 @@ import {ReactComponent as AppointmentsIcon} from "../assets/icons/dashboardIcons
 import {ReactComponent as PetsIcon} from "../assets/icons/dashboardIcons/cat-solid.svg"
 import {ReactComponent as MedicalReportIcon} from "../assets/icons/dashboardIcons/file-waveform-solid.svg"
 import {ReactComponent as BillingIcon} from "../assets/icons/dashboardIcons/dollar-sign-solid.svg"
+import {ReactComponent as MessageIcon} from "../assets/icons/dashboardIcons/message-regular.svg"
 import "../styles/dashboard/SideBar.css"
 import { Link } from 'react-router-dom'
 
@@ -19,6 +20,7 @@ function SideBar({renderPage, setRenderPage, setIsLoggedIn}) {
             pets: false,
             medicalReports: false,
             billing: false,
+            chat: false
         }))
     }
 
@@ -29,6 +31,7 @@ function SideBar({renderPage, setRenderPage, setIsLoggedIn}) {
             pets: false,
             medicalReports: false,
             billing: false,
+            chat: false
         }))
     }
 
@@ -39,6 +42,7 @@ function SideBar({renderPage, setRenderPage, setIsLoggedIn}) {
             pets: true,
             medicalReports: false,
             billing: false,
+            chat: false
         }))
     }
     function showMedicalReports() {
@@ -48,6 +52,7 @@ function SideBar({renderPage, setRenderPage, setIsLoggedIn}) {
             pets: false,
             medicalReports: true,
             billing: false,
+            chat: false
         }))
     }
     function showBilling() {
@@ -57,6 +62,17 @@ function SideBar({renderPage, setRenderPage, setIsLoggedIn}) {
             pets: false,
             medicalReports: false,
             billing: true,
+            chat: false
+        }))
+    }
+    function showChat() {
+        setRenderPage(prev => ({
+            dashboard: false,
+            appointments: false,
+            pets: false,
+            medicalReports: false,
+            billing: false,
+            chat: true
         }))
     }
     
@@ -89,6 +105,10 @@ function SideBar({renderPage, setRenderPage, setIsLoggedIn}) {
                 onClick={showBilling} 
                 style={renderPage.billing ? {color: " black"} : null}>
                 <BillingIcon className='dashboard-icons' style={renderPage.billing ? {fill: " black"} : null}/> Billing</li>
+                <li 
+                onClick={showChat} 
+                style={renderPage.chat ? {color: " black"} : null}>
+                <MessageIcon className='dashboard-icons' style={renderPage.chat ? {fill: " black"} : null}/> Chat</li>
             </ul>
         </div>
         <div className='sign-out-container'>

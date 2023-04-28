@@ -114,6 +114,23 @@
     left: 15px;
 }
 
+.password-login-input {
+    position: relative;
+}
+
+.password-login-input input {
+    width: 100%;
+}
+
+.password-icons {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 21px;
+    right: 10px;
+    cursor: pointer;
+}
+
 @Media screen and (max-width: 768px) {
     .login-card-container {
         width: 95%;

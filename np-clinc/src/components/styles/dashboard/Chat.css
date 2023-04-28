@@ -1,0 +1,28 @@
+.chat-page-container {
+    border: 1px solid;
+    height: 100%;
+    display: flex;
+} 
+
+.unread-meassages-container {
+    width: 25%;
+    margin-right: 10px;
+}
+
+.chat-box-container {
+    width: 60%;
+    border: 1px solid blue;
+}
+
+.chat-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.chat-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
