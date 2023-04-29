@@ -2,9 +2,11 @@ import React from 'react'
 import { Button } from '../components';
 import DoctorImage from "./assets/pexels-antoni-shkraba-5215024.jpg"
 import "./styles/BookWith.css"
+import {Fade, Reveal} from "react-reveal"
 
 function BookWith() {
   return (
+    <Fade bottom>
     <div className='book-with-container'>
         <div className='image-container-book-now'>
             <img src={DoctorImage}/>
@@ -21,6 +23,7 @@ function BookWith() {
             </div>
         </div>
     </div>
+    </Fade>
   )
 }
 

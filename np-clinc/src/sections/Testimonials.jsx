@@ -3,13 +3,17 @@ import { TestimonialCard } from '../components'
 import "./styles/Testimonials.css"
 import TestimonialMan from "./assets/pexels-marina-gr-14428606.jpg"
 import TestimonialWoman from "./assets/pexels-mateus-souza-3586798.jpg"
+import {Fade} from "react-reveal"
 
 function Testimonials() {
   return (
     <div className='testimonials-container'>
+      <Fade top>
         <div className='testimonials-div-container'>
             <h1>What do our patients say ?</h1>
         </div>
+      </Fade>
+      <Fade bottom>
         <div className='testimonial-cards-container'>
             <TestimonialCard 
             title="Intrested and Exprreinced Vetenarians"
@@ -29,6 +33,7 @@ function Testimonials() {
             customerImage={TestimonialMan}
             />
         </div>
+        </Fade>
     </div>
   )
 }

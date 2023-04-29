@@ -3,14 +3,18 @@ import { Button } from '../components';
 import CompanyPic from "./assets/pexels-ensaio-da-cegueira-15215418.jpg"
 import "./styles/NoahsClinicAbout.css"
 import {Link} from "react-router-dom"
+import {Fade, Reveal} from "react-reveal"
 
 function NoahsClinicAbout({loggedInStatus}) {
   return (
     <div className='about-the-clinic-container'>
+        <Reveal effect="fadeInUp">
         <div className='image-container-noahs-clinic'>
             <div className='image-backdrop'></div>
             <img src={CompanyPic}/>
         </div>
+        </Reveal>
+        <Fade right>
         <div className='about-container-noahs-clinic'>
             <div className='container-for-about'>
                 <h4>WELCOME TO</h4>
@@ -26,6 +30,7 @@ function NoahsClinicAbout({loggedInStatus}) {
                 </div>
             </div>
         </div>
+        </Fade>
     </div>
   )
 }

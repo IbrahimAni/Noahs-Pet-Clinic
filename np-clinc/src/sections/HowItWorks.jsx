@@ -6,10 +6,12 @@ import Doctor from "./assets/icons/notes-medical-solid.svg"
 import DogBook from "./assets/icons/shield-dog-solid.svg"
 import "./styles/HowItWorks.css"
 import {Link} from "react-router-dom"
+import {Fade} from "react-reveal"
 
 
 function HowItWorks({loggedInStatus}) {
   return (
+    <Fade right>
     <div className='how-it-works-container'>
         <div className='how-it-works-text-container'>
             <h1>How It Works</h1>
@@ -25,8 +27,8 @@ function HowItWorks({loggedInStatus}) {
                 <Button name="Book An Appointment" btnClass="btn-primary btn-no-bg"/>
             </Link>
         </div>
-
     </div>
+    </Fade>
   )
 }
 

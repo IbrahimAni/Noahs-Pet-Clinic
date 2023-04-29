@@ -3,15 +3,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     top: 0;
     left: 0;
     right: 0;
-    padding-left: 80px;
-    padding-right: 10px;
     box-sizing: border-box;
-    margin-top: 10px;
+    padding: 15px 10px 10px 80px;
+    transition: color 0.4s ease-in-out;
+}
+
+.scrolled {
+    position: sticky;
+    background-color: #fff;
+    z-index: 1;
 }
 
 

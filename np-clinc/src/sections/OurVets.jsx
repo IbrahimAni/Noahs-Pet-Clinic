@@ -4,14 +4,18 @@ import "./styles/OurVets.css"
 import FristDoctor from "./assets/pexels-rodnae-productions-6129500.jpg"
 import SecondDoctor from "./assets/pexels-jrfotosgrand-fotografia-12660379.jpg"
 import ThirdDoctor from "./assets/pexels-domineves-anthony-12495583.jpg"
+import {Fade} from "react-reveal"
 
 function OurVets() {
   return (
     <div className='our-vets-container'>
+      <Fade top>
         <div className='our-vets-text-container'>
             <h1>Our High Qualified Veterinarians</h1>
             <p>See All &rarr;</p>
         </div>
+      </Fade>
+      <Fade right>
         <div className='vet-card-section-container'>
             <VetsCard 
             name="Dr. Neil Human Pascal"
@@ -29,6 +33,7 @@ function OurVets() {
             img={ThirdDoctor}
             />
         </div>
+      </Fade>
     </div>
   )
 }

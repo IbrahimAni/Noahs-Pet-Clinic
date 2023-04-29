@@ -1,6 +1,7 @@
 import React from 'react'
 import { Header, NoahsClinicAbout, Services, BookWith, HowItWorks, Testimonials, OurVets, Articles, BlogSubscribe, Footer } from '../sections'
 import "./styles/Landing.css"
+import {Fade, Reveal} from "react-reveal"
 
 
 const Landing = ({loggedIn, setLoggedIn}) => {

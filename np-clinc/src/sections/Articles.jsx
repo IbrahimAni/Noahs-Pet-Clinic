@@ -4,11 +4,15 @@ import "./styles/Articles.css"
 import FirstArticle from "./assets/pexels-tranmautritam-2215599.jpg"
 import SecondArticle from "./assets/pexels-norbert-kundrak-1677533.jpg"
 import ThirdArticle from "./assets/pexels-muhannad-alatawi-58997.jpg"
+import {Fade} from "react-reveal"
 
 function Articles() {
   return (
     <div className='articles-container'>
+      <Fade top>
         <h1>Articles Feeds</h1>
+      </Fade>
+      <Fade left>
         <div className='article-cards-section-container'>
             <ArticlesCard 
             articleTitle="Noahs Pet Store Vetenerians were on TV!"
@@ -35,6 +39,7 @@ function Articles() {
             img={ThirdArticle}
             />
         </div>
+        </Fade>
     </div>
   )
 }

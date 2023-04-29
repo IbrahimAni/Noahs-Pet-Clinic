@@ -14,9 +14,11 @@ import {ReactComponent as SignOutIcon} from "./assets/icons/navbarIcons/arrow-ri
 const Navbar = (props) => {
 
     const profileRef = useRef(null);
+    const navRef = useRef(null);
 
     const [menuOpen, setMenuOpen] = useState(false)
     const [profileOpen, setProfileOpen] = useState(false)
+    const [scrolled, setScrolled] = useState(false)
 
     function handleClick() {
       setMenuOpen(!menuOpen);
@@ -46,9 +48,25 @@ const Navbar = (props) => {
           document.removeEventListener('click', handleOutsideClick);
         };
     },[]);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY > 0) {
+          setScrolled(true)
+        }else {
+          setScrolled(false)
+        }
+      }
+
+      document.addEventListener('scroll', handleScroll);
+      
+      return () => {
+        document.removeEventListener('scroll', handleScroll)
+      }
+    })
  
   return (
-    <div className='navbar-conatiner'>
+    <div className={`navbar-conatiner ${scrolled ? "scrolled" : ""}`}>
       <div className='nav-items-container'>
         <div className='company-logo'>
           <Link to='/' style={{textDecoration: "none", color: "black"}}>
