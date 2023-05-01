@@ -105,10 +105,10 @@ function SideBar({renderPage, setRenderPage, setIsLoggedIn}) {
                 onClick={showBilling} 
                 style={renderPage.billing ? {color: " black"} : null}>
                 <BillingIcon className='dashboard-icons' style={renderPage.billing ? {fill: " black"} : null}/> Billing</li>
-                <li 
+                {/* <li 
                 onClick={showChat} 
                 style={renderPage.chat ? {color: " black"} : null}>
-                <MessageIcon className='dashboard-icons' style={renderPage.chat ? {fill: " black"} : null}/> Chat</li>
+                <MessageIcon className='dashboard-icons' style={renderPage.chat ? {fill: " black"} : null}/> Chat</li> */}
             </ul>
         </div>
         <div className='sign-out-container'>

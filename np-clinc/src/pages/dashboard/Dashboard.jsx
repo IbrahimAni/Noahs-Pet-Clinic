@@ -1,7 +1,8 @@
-
 import React from 'react'
 import { NavbarDashboard, SideBar, MainDisplay } from '../../components'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
+import "../styles/dashboard/Dashboard.css"
+import Loader from '../../components/Loader'
 
 function Dashboard({setIsLoggedIn}) {
 
@@ -16,6 +17,7 @@ function Dashboard({setIsLoggedIn}) {
 
   return (
     <div className='dashboard-container'>
+        <Loader />
         <NavbarDashboard />
         <SideBar setRenderPage={setRenderPage} renderPage={renderPage} setIsLoggedIn={setIsLoggedIn}/>
         <MainDisplay renderPage={renderPage}/>

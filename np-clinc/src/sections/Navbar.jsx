@@ -64,6 +64,11 @@ const Navbar = (props) => {
         document.removeEventListener('scroll', handleScroll)
       }
     })
+
+    const linkStyle = {
+      textDecoration: "none",
+      color: "inherit"
+    }
  
   return (
     <div className={`navbar-conatiner ${scrolled ? "scrolled" : ""}`}>
@@ -106,11 +111,11 @@ const Navbar = (props) => {
             <div className='profile-picture-container' onClick={handleProfileShow} ref={profileRef}>
                 <img src={ProfilePic}/>
                 { profileOpen &&
-                  <div className='profile-container'>
+                  <div className={`profile-container ${profileOpen ? "animate--prof" : ""}`}>
                     <ul className='profile-items-container'>
                       <li><Profile className='profile-icons'/> Profile</li>
-                      <li><PetIcon className='profile-icons'/> My Pets</li>
-                      <li><AppointmentIcon className='profile-icons'/> My Appointments</li>
+                      <Link to='/dashboard' style={linkStyle}><li><PetIcon className='profile-icons'/> My Pets</li></Link>
+                      <Link to='/dashboard' style={linkStyle}><li><AppointmentIcon className='profile-icons'/> My Appointments</li></Link>
                       <li><SupportIcon className='profile-icons'/> Support</li>
                       <li><SettingsIcon className='profile-icons'/>Account Settings</li>
                       <li onClick={handleLogout}><SignOutIcon className='profile-icons'/> Sign Out</li>

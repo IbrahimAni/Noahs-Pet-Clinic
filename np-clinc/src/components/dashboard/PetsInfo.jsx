@@ -37,7 +37,6 @@ function PetsInfo({setClickEdit}) {
 
   return (
     <div className='pets-info-container'>
-        <Cancel className='pet-info-icon' onClick={() => setClickEdit(false)}/>
         <div className='pet-info-inner'>
             <h1>Your Pets Information</h1>
             <form className='pet-info-edit-form'>

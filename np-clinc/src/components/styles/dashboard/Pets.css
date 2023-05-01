@@ -1,8 +1,9 @@
 .pets-container {
-    height: 100%;
+    min-height: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .pets-container h2 {
@@ -48,12 +49,11 @@
 }
 
 .edit-pets-info-page {
-    border: 1px solid;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

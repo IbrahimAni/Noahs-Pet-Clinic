@@ -18,7 +18,7 @@ function Pets() {
         <h2>My Pets</h2>
         <div className='pet-registration-center'>
             <div className='registered-pet-container' onClick={handleClick}>
-                <p>Hercules</p>
+                <Link to='/pet-information' style={{textDecoration: 'none', color: "inherit"}}><p>Hercules</p></Link>
                 <p>Hercules</p>
             </div>
             <Link to='/register-pet' style={{textDecoration: 'none', color: "black"}}>
@@ -28,11 +28,6 @@ function Pets() {
             </div>
             </Link>
         </div>
-         {clickEdit &&
-          <div className='edit-pets-info-page'>
-              <PetsInfo setClickEdit={setClickEdit}/>
-          </div>
-        }
     </div>
   )
 }

@@ -1,9 +1,10 @@
 .booking-pop-up {
-    width: 40%;
-    height: 100%;
+    width: 95%;
+    min-height: 100%;
     background-color: #fff;
-    padding: 10px 20px;
-    border: 1px solid grey;
+    padding: 30px 50px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
 }
 
 .booking-inner-pop-up {
@@ -14,7 +15,7 @@
 }
 
 .booking-inner-pop-up h1 {
-    font-size: 26px;
+    font-size: 29px;
     margin: 10px 0;
 }
 
@@ -71,10 +72,11 @@ label {
     font-size: 16px;
     cursor: pointer;
     width: 40%;
+    margin: 20px 0;
 }
 
 .terms-and-conditiions {
-    font-size: 9px;
+    font-size: 12px;
 }
 
 .terms-and-conditiions p {
@@ -84,7 +86,7 @@ label {
 .proceed-to-pay{
     display: flex;
     justify-content: center;
-    margin-top: auto;
+    margin-top: 50px;
 }
 
 .proceed-to-pay button {

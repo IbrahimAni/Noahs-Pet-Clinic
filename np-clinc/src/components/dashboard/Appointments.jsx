@@ -9,6 +9,8 @@ import {ReactComponent as Title} from "../assets/icons/dashboardIcons/title.svg"
 import {ReactComponent as Doctor} from "../assets/icons/dashboardIcons/doctor.svg"
 import {ReactComponent as PetIcon} from "../assets/icons/dashboardIcons/dog.svg"  
 import {ReactComponent as Check} from "../assets/icons/dashboardIcons/circle-check-solid.svg"
+import {ReactComponent as Book} from "../assets/dashboardImages/undraw_booking_re_gw4j.svg"
+import 'animate.css';
 
 function Appointments() {
 
@@ -38,7 +40,7 @@ function Appointments() {
                 <div className='book-an-appointment-container'> 
                     <h1>Book An Appointment</h1>
                     <div className='add-icon-book-container'>
-                        <AddIcon className='book-icon'/>
+                        <Book className='book-icons'/>
                     </div>
                     <div className='book-an-apoointment-btn'>
                         <Link to='/book-appointments'><button>Book An Appointment</button></Link>
@@ -59,7 +61,7 @@ function Appointments() {
                 </div>
             </div>
             {
-                clickCancel && <CancelAppointment setClickCancel={setClickCancel}/>
+                clickCancel && <CancelAppointment setClickCancel={setClickCancel} clickCancel={clickCancel}/>
             }
         </div>
   )

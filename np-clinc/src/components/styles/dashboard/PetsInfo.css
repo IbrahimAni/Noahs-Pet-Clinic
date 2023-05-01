@@ -1,9 +1,14 @@
 .pets-info-container {
-    width: 50%;
-    border: 1px solid;
-    padding: 20px;
-    background-color: #fff;
+    width: 90%;
+    padding: 35px 45px;
+    background-color: #f9f9f9;
     position: relative;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.pet-info-inner h1 {
+    margin-bottom: 25px;
 }
 
 .pet-info-edit-form div {
@@ -14,11 +19,12 @@
 .pet-info-edit-form div label {
     font-size: 13px;
     color: grey;
+    margin-bottom: 5px;
 }
 
 .pet-info-edit-form div input {
     width: 90%;
-    padding: 5px 5px;
+    padding: 10px 5px;
     font-size: 15px;
     margin-bottom: 10px;
 }

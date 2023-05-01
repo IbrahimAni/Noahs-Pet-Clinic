@@ -12,8 +12,8 @@
     width: 450px;
     border: 1px solid gray;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: all 5s ease-in-out;
-    animation: slideIn 0.5s ease-in-out forwards;
+    /* transition: all 5s ease-in-out;
+    animation: slideIn 0.5s ease-in-out forwards; */
 }
 
 .close-page-cancel {
@@ -24,7 +24,8 @@
     top: 10px;
     right: 10px;
     cursor: pointer;
-    transition: all 200ms;
+    overflow: hidden;
+    /* transition: all 200ms; */
 }
 
 .close-page-cancel:hover {
