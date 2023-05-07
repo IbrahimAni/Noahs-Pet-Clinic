@@ -1,0 +1,132 @@
+.profile-main-container {
+    width: 100%;
+    height: 100%;
+    padding: 5px 20px;
+    background-color: #f9f9f9;
+}
+
+.profile-main-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.profile-main-inner h1, .title-sizer {
+    font-size: 14px;
+}
+
+
+.edit-avatar-section {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+
+.edit-btn-profile-pic {
+    margin-left: 30px;
+    min-width: 20%;
+    padding: 15px;
+}
+
+.edit-btn-profile-pic button {
+    margin: 0 15px;
+}
+
+.edit-profile-pic-container {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin: 0 0 0 50px;
+}
+
+.edit-profile-pic-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.edit-personal-information-section {
+    margin-top: 20px;
+    display: flex;
+    padding: 17px 10px;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+
+.edit-personal-information-section div {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.edit-personal-information-section div label {
+    margin-bottom: 4px;
+    font-size: 15px;
+}
+
+.contact-information {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.contact-information div {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.contact-information div label {
+    margin-bottom: 4px;
+    font-size: 15px;
+}
+
+.btn-main-settings {
+    width: fit-content;
+    padding: 10px;
+    background: #1ba0ab;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px ;
+    color: #fff;
+    cursor: pointer;
+}
+
+.input-settings-main {
+    padding: 11px;
+    margin: 6px 0;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ebebeb;
+}
+
+.edit-submit-btn-main {
+    display: flex;
+    margin-top: 5px;
+}
+
+.edit-submit-btn-main span {
+    margin-left: auto;
+}
+
+.edit-submit-btn-main span button {
+    margin: 4px;
+}
+
+.edit-submit-btn-main span button:first-child, .delete-settings-btn {
+    background: none;
+    color: #1ba0ab;
+    border: 1px solid #1ba0ab;
+}
+
+.cancel-profile-update {
+    margin-bottom: -13px;
+}

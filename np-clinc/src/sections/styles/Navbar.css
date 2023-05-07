@@ -3,7 +3,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* position: absolute; */
     width: 100%;
     top: 0;
     left: 0;
@@ -164,9 +163,9 @@
     border-radius: 5px;
     width: 18%;
     z-index: 1;
-    min-height: 1px;
+    min-height: 0px;
     opacity: 0;
-    transition: min-height 1.2s ease, opacity 0.8s ease;
+    transition: min-height 0.5s ease, opacity 0.5s ease;
 }
 
 .animate--prof {

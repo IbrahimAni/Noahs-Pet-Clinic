@@ -19,6 +19,9 @@ import Appointments from "./dashboard/Appointments"
 import BookingPopUp from "./dashboard/BookingPopUp"
 import AppointmentInfoCard from "./dashboard/AppointmentInfoCard"
 import HistoryDetails from "./dashboard/HistoryDetails"
+import Settings from "./Settings"
+import Profile from "./settings/Profile"
+import Password from "./settings/Password"
 
 export {
     Button,
@@ -41,5 +44,8 @@ export {
     Appointments,
     BookingPopUp,
     AppointmentInfoCard,
-    HistoryDetails
+    HistoryDetails,
+    Settings,
+    Profile,
+    Password
 }

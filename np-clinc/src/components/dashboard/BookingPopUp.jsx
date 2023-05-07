@@ -1,10 +1,13 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import "../styles/dashboard/BookingPopUp.css"
+import SucessMessage from './SucessMessage'
 
-function BookingPopUp() {
+function BookingPopUp(props) {
 
   return (
     <div className='booking-pop-up'>
+        {   props.popUp && 
+            <SucessMessage message='Your Appointment has been Sucessfully Booked. You Can Proceed to Make Payment'/>}
         <div className='booking-inner-pop-up'>
             <h1>Appointment Booking</h1>
             <div className='booking-user-info'>
@@ -27,9 +30,9 @@ function BookingPopUp() {
                 <label>Problem Description</label>
                 <textarea className='problem-description'/>
                 <label>Choose Appointment Date:</label>
-                <input type='date' className='date-book'/>
+                <input type='date' className='date-book'/>          
                 <div className='book-btn-container'>
-                    <button>Book Appointment</button>
+                    <button onClick={props.handlePopUp}>Book Appointment</button>
                 </div>
             </form>
             <div className='terms-and-conditiions'>

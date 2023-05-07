@@ -1,9 +1,11 @@
 import React from 'react'
 import "../styles/dashboard/RegisterNewPetCard.css"
+import SucessMessage from './SucessMessage'
 
-function RegisterNewPetCard() {
+function RegisterNewPetCard(props) {
   return (
     <div className='register-new-pet-card-container'>
+        {props.popUp && <SucessMessage message='Congratulations You Have Added a New Pet!'/>}
         <div className='register-new-pet-card-inner-container'>
             <h1>Register New Pet</h1>
             <form className='pet-register-form'>
@@ -47,7 +49,9 @@ function RegisterNewPetCard() {
                     <label>Previous injuries or surgeries</label>
                     <input type='text'/>
                 </div>
-                <button className='grid-col-span-2'>Register Your Pet</button>
+                <button className='grid-col-span-2'
+                onClick={props.handlePopUp}
+                >Register Your Pet</button>
             </form>
         </div>
     </div>

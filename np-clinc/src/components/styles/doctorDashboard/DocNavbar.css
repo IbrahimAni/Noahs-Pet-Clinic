@@ -1,0 +1,14 @@
+.doc-navbar-main {
+    padding: 10px 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 92%;
+}
+
+.nav-inner-doctor {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-left: auto;
+}

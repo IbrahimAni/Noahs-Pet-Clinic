@@ -1,6 +1,7 @@
 .register-new-pet-container {
     width: 100%;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .register-new-pet-inner-container {

@@ -63,7 +63,7 @@
     font-size: 13px;
 }
 
-span {
+.small-size span {
     color: #1ba0ab;
     cursor: pointer;
 }

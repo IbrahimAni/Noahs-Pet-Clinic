@@ -10,6 +10,8 @@ import AppointmentsDetails from "./dashboard/AppointmentsDetails";
 import AppointmentsHistoryDetails from "./dashboard/AppointmentsHistoryDetails";
 import RegisterNewPet from "./dashboard/RegisterNewPet";
 import PetInfo from "./dashboard/PetInfo";
+import SettingsPage from "./SettingsPage";
+import DoctorDashbord from "./doctorDashboard/DoctorDashbord";
 
 export {
   Landing,
@@ -23,5 +25,7 @@ export {
   AppointmentsDetails,
   AppointmentsHistoryDetails,
   RegisterNewPet,
-  PetInfo
+  PetInfo,
+  SettingsPage,
+  DoctorDashbord
 }

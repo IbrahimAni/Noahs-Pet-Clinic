@@ -110,7 +110,7 @@ const Navbar = (props) => {
           (
             <div className='profile-picture-container' onClick={handleProfileShow} ref={profileRef}>
                 <img src={ProfilePic}/>
-                { profileOpen &&
+                { 
                   <div className={`profile-container ${profileOpen ? "animate--prof" : ""}`}>
                     <ul className='profile-items-container'>
                       <li><Profile className='profile-icons'/> Profile</li>

@@ -2,8 +2,9 @@ import React from 'react'
 import "../styles/dashboard/PetsInfo.css"
 import { useState } from 'react';
 import {ReactComponent as Cancel} from "../assets/icons/dashboardIcons/xmark-solid.svg"
+import SucessMessage from './SucessMessage';
 
-function PetsInfo({setClickEdit}) {
+function PetsInfo(props) {
 
     const [isEditable, setIsEditable] = useState(false);
     const [buttonText, setButtonText] = useState('Edit')
@@ -37,6 +38,8 @@ function PetsInfo({setClickEdit}) {
 
   return (
     <div className='pets-info-container'>
+        {   props.popUp && 
+            <SucessMessage message='Your Pets Information have been updated successfully' />}
         <div className='pet-info-inner'>
             <h1>Your Pets Information</h1>
             <form className='pet-info-edit-form'>
@@ -81,7 +84,9 @@ function PetsInfo({setClickEdit}) {
                     <input type='text' name='pis' value={petDetails.pis} readOnly={!isEditable} onChange={handleInputChange}/>
                 </div>
                 <div className='edit-pets-details-btn'>
-                    <button onClick={handleEdit}>{buttonText}</button>
+                    <button onClick={() => {
+                        handleEdit()
+                        props.handlePopUp()}}>{buttonText}</button>
                 </div>
             </form>
         </div>

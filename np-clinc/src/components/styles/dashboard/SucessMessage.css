@@ -1,0 +1,18 @@
+.sucess-message-container {
+    width: fit-content;
+    height: 60px;
+    position: absolute;
+    right: 40px;
+    padding: 0 20px;
+    background-color: #345a33;
+    color: #fff;
+    display:  flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: opacity 0.75s ease, visibility 0.75s ease;
+    overflow: hidden;
+}
+
+.fade {
+    opacity: 0;
+}
